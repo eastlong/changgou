@@ -1,0 +1,49 @@
+server:
+  port: 18086
+  connection-timeout: 10000
+spring:
+  application:
+    name: search
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 192.168.211.132:9300
+  redis:
+    port: 6379
+    host: 192.168.211.132
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7001/eureka
+
+feign:
+  hystrix:
+    enabled: true
+  httpclient:
+    connection-timeout: 10000
+  client:
+    config:
+      default: # 指定feignclients对应的名称 如果指定的是default 表示全局所有的client 的超时时间设置
+        connectTimeout: 10000
+        readTimeout: 10000
+        loggerLevel: basic
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+#ribbon:
+#  eureka:
+#    enabled: true
+
+ribbon:
+  ReadTimeout: 300000
+

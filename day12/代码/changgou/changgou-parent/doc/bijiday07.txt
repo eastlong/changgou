@@ -1,0 +1,63 @@
++ thymeleaf	(他么礼服)
+	+ 语法
+
++ 实现搜索的结果页渲染
+
++ 商品详情页 [静态化]
+
+
++ thyemleaf  (springboot 推荐使用 )
+	+ 就是 一个模板引擎,通过模板引擎可以替代jsp 做数据渲染.	(看成JSP)
+
+	+ 模板+ 数据集 = html
+
+
+
+
++ jsp是如何开发的
+	+ 发送请求    /search/list
+
+	+ 后台会有一个 controller
+		+ excteue(Model model){
+			model.addAttribute("key1","value1");
+			return "index";
+		}
+
+	+ /web-inf/jsp
+		+ index.jsp        <a>${key}</a>
+
+
+
+ + spring boot 整合thyemleaf 
+
+	+ 依赖
+	+ 创建模板文件(xxx.html )属于/resources/templates 目录
+	+ 创建controller (和springmvc的开发)
+	+ 在模板文件中:获取 值:
+		+ 引入声明
+		+ 一定要在html标签中使用theymleaf的标签:th:text......
+
+
+
+
++实现搜索的功能
+	+ 请求:/search/list
+	+ 参数: searchMap {}
+	+ 返回值:逻辑视图(templtes下的模板文件) 设置model 并通过标签从Model获取数据渲染
+
+
+
++搜索的条件的拼接
+	+ 每次发送请求 都需要记住上一次的URL的数据设置model中
+	+ 点击面板的时候,需要先拿出原来的URL 再这个基础拼接一个&key=value
+	+ 再次发送请求
+
+
+
+
+ resultMap.put("categoryList", categoryList);//商品分类的列表数据
+        resultMap.put("brandList", brandList);   //商品品牌的列表数据
+        resultMap.put("specMap", specMap);   //商品规格的列表数据展示   Map<String, Set<String>>
+        resultMap.put("rows", content);
+        resultMap.put("total", totalElements);
+        resultMap.put("totalPages", totalPages);

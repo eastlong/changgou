@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="changgou-common" />
+        <module name="changgou-common-db" />
+        <module name="changgou-eureka" />
+        <module name="changgou-gateway-web" />
+        <module name="changgou-servcie-canal" />
+        <module name="changgou-service-content" />
+        <module name="changgou-service-content-api" />
+        <module name="changgou-service-file" />
+        <module name="changgou-service-goods" />
+        <module name="changgou-service-goods-api" />
+        <module name="changgou-service-order" />
+        <module name="changgou-service-order-api" />
+        <module name="changgou-service-pay" />
+        <module name="changgou-service-search" />
+        <module name="changgou-service-search-api" />
+        <module name="changgou-service-seckill" />
+        <module name="changgou-service-seckill-api" />
+        <module name="changgou-service-user" />
+        <module name="changgou-service-user-api" />
+        <module name="changgou-user-oauth" />
+        <module name="changgou-web-item" />
+        <module name="changgou-web-item-api" />
+        <module name="changgou-web-search" />
+        <module name="code-template" />
+        <module name="itheima-rabbitmq-delay-queue" />
+        <module name="itheima-springboot-thymeleaf" />
+        <module name="itheimaspringbootthymeleaf" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="changgou-common" target="1.8" />
+      <module name="changgou-common-db" target="1.8" />
+      <module name="changgou-eureka" target="1.8" />
+      <module name="changgou-gateway" target="1.8" />
+      <module name="changgou-gateway-web" target="1.8" />
+      <module name="changgou-parent" target="1.8" />
+      <module name="changgou-servcie-canal" target="1.8" />
+      <module name="changgou-service" target="1.8" />
+      <module name="changgou-service-api" target="1.8" />
+      <module name="changgou-service-content" target="1.8" />
+      <module name="changgou-service-content-api" target="1.8" />
+      <module name="changgou-service-file" target="1.8" />
+      <module name="changgou-service-goods" target="1.8" />
+      <module name="changgou-service-goods-api" target="1.8" />
+      <module name="changgou-service-order" target="1.8" />
+      <module name="changgou-service-order-api" target="1.8" />
+      <module name="changgou-service-pay" target="1.8" />
+      <module name="changgou-service-search" target="1.8" />
+      <module name="changgou-service-search-api" target="1.8" />
+      <module name="changgou-service-seckill" target="1.8" />
+      <module name="changgou-service-seckill-api" target="1.8" />
+      <module name="changgou-service-user" target="1.8" />
+      <module name="changgou-service-user-api" target="1.8" />
+      <module name="changgou-user-oauth" target="1.8" />
+      <module name="changgou-web" target="1.8" />
+      <module name="changgou-web-item" target="1.8" />
+      <module name="changgou-web-item-api" target="1.8" />
+      <module name="changgou-web-search" target="1.8" />
+      <module name="changgouservicepay" target="1.8" />
+      <module name="code-template" target="1.5" />
+      <module name="itheima-rabbitmq-delay-queue" target="1.8" />
+      <module name="itheima-springboot-thymeleaf" target="1.8" />
+      <module name="itheimaspringbootthymeleaf" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

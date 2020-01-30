@@ -1,0 +1,51 @@
++ 整合springboot 和springcloud
+    + yml
+    + 依赖
+    + 引导类
+
+
++ 创建商品的微服务 (实现商品的表的操作)
+	+ 需求:
+		品牌的查询 (controler service dao)
+
+
+	+ 创建商品的微服务工程
+		+配置yml
+		+ 依赖
+		+ 引导类
+
+	+ 创建商品的微服务依赖的API (POJO FEIGN)
+
+	+ 根据swagger文档来 编写 controller service dao 
+
+
+	
+
++ 集成 通用的mapper 
+	+ 通用的mapper的依赖
+	+ 创建javabean (一定要有JPA的注解)
+	+ 写一个brand/spec接口 extends Mapper<T>
+	+ 组件扫描(接口所在的包)
+
+
+	+ 测试
+
+
++ 全局异常处理
+	+ 1.每一个controller的方法 try catch
+
+
+	+ 2.定义一个全局异常处理器   类(针对所有的cotroller 处理异常)
+		+ 注解
+		+ 方法
+		+ 组件扫描
+
+
+总结:
+	+ 电商模式
+		+ B2C B2B B2B2C C2B O2O F2C
+
+		+畅购 B2C 
+
+
+	

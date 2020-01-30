@@ -1,0 +1,117 @@
++生成静态页
+    + thyemleaf
+    + 创建静态页的微服务
+    + 创建feign
+
+    + canal中监听数据变化,调用feign完成静态页生成
+
+
+
++ 网关 
+	根据需求:一个相同的业务组合 公用一个网关.
+
+
+
++ 配置
+	+ 跨域的配置
+
+	+ 配置 谓词(断言)
+		 -Path
+
+	+ 配置 filter
+		-lb
+		-stripprix
+
+
+
+
+		 
+
+
++ 限流
+	以用户的IP 为单位,限制 同一个iP地址 一秒钟只能处理一个请求.
+
+	+ 配置keysoler 标识 某一个用户的(ip,接口,请求)
+
+	+ application.yml
+		+ 速率 
+
+
+# 唯一的标识
+      - id : changgou_goods_route
+      # 路由到的请求的地址 商品微服务
+        uri : lb://goods
+        predicates:
+        #指定host 表示 匹配以cloud.itheima.com 开始的所有的请求
+        #- Host=cloud.itheima.com**
+        # 指定路径  表示匹配 所有以/brand/** 开头的路径
+        #- Path=/brand/**
+        - Path=/**
+        filters:
+        # 例如: 请求: /aaaa --->自动加入一个前缀/brand ---> /brand/aaaa --->http://localhost:18081/brand/aaaa
+        #- PrefixPath=/brand
+        # 削减路径 以 / 进行分割 例如: 访问:/api/brand/1115 --->/brand/1115 ---->http://localhost:18081/brand/1115
+        - StripPrefix=1
+        - name: RequestRateLimiter #请求数限流 名字不能随便写 ，使用默认的facatory
+          args:
+            #指定用户的唯一标识(ip来限制,请求量,....)
+            key-resolver: "#{@ipKeyResolver}"
+            redis-rate-limiter.replenishRate: 1
+            redis-rate-limiter.burstCapacity: 1
+
+
+
+
+
++ 创建jwt 令牌(字符串  )
+
++ 解析令牌
+
+
+
+
+总结:
+	网关:
+		+ 断言
+			Path
+		+ 过滤器
+			lb: 负载均衡 
+			StripPrefix :削减路径
+			prefixPath :前缀(自动添加前缀)
+
+		+ 限流
+			redis 用的是令牌桶
+
+
+jwt:
+	就是一个字符串(里面有信息(头,载荷,签名) 用户名密码等数据存储好了)   
+	
+	目的:校验,
+	
+	优势:1.轻量级  (json)
+	缺点:2.一旦生成了,在这个有效期内 永远有效.
+
+       生成令牌
+	+  buidler () 要有秘钥(key--)
+
+       解析令牌
+	+  要有秘钥(key--)
+
+
+网关的鉴权的思路:
+
+
+
+
+
+网页静态化:
+	+ why为甚么要网页静态化(并发)
+	+what 就是通过一些技术手段(thymeleaf) 将动态的书转成静态的数据(html)
+
+	+ 使用thempleaf()
+
+
+畅购的商品的详情的解决方案:
+	
+
+	

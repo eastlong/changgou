@@ -1,0 +1,1711 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>商品出库</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=1366, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/商品出库/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/商品出库/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- 对话框 (Dynamic Panel) -->
+      <div id="u6878" class="ax_default ax_default_hidden" data-label="对话框" style="display:none; visibility: hidden">
+        <div id="u6878_state0" class="panel_state" data-label="高级检索" style="">
+          <div id="u6878_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6879" class="ax_default _默认样式">
+              <div id="u6879_div" class=""></div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6880" class="ax_default _默认样式">
+              <div id="u6880_div" class=""></div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u6881" class="ax_default" data-left="393" data-top="397" data-width="180" data-height="35">
+
+              <!-- Unnamed (Group) -->
+              <div id="u6882" class="ax_default" data-left="393" data-top="397" data-width="180" data-height="35">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u6883" class="ax_default _默认样式">
+                  <div id="u6883_div" class=""></div>
+                  <div id="u6883_text" class="text ">
+                    <p><span>重置</span></p>
+                  </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u6884" class="ax_default _默认样式">
+                  <div id="u6884_div" class=""></div>
+                  <div id="u6884_text" class="text ">
+                    <p><span>开始检索</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6885" class="ax_default _默认样式">
+              <div id="u6885_div" class=""></div>
+              <div id="u6885_text" class="text ">
+                <p><span>高级检索</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Shape) -->
+            <div id="u6886" class="ax_default _默认样式">
+              <img id="u6886_img" class="img " src="images/常用组件/u855.png"/>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6887" class="ax_default _默认样式">
+              <div id="u6887_div" class=""></div>
+              <div id="u6887_text" class="text ">
+                <p><span>操作时间：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6888" class="ax_default _默认样式">
+              <div id="u6888_div" class=""></div>
+              <div id="u6888_text" class="text ">
+                <p><span>商品名称/商品货号</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u6889" class="ax_default" data-left="67" data-top="207" data-width="180" data-height="35">
+
+              <!-- Unnamed (Rectangle) -->
+              <div id="u6890" class="ax_default _默认样式">
+                <div id="u6890_div" class=""></div>
+                <div id="u6890_text" class="text ">
+                  <p><span>全部</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Rectangle) [footnote] -->
+              <div id="u6890_ann" class="annotation"></div>
+
+              <!-- Unnamed (Shape) -->
+              <div id="u6891" class="ax_default _默认样式">
+                <img id="u6891_img" class="img " src="images/选择组件/u1037.png"/>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6892" class="ax_default _默认样式">
+              <div id="u6892_div" class=""></div>
+              <div id="u6892_text" class="text ">
+                <p><span>输入搜索：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6893" class="ax_default _默认样式">
+              <div id="u6893_div" class=""></div>
+              <div id="u6893_text" class="text ">
+                <p><span>订单编号：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6894" class="ax_default _默认样式">
+              <div id="u6894_div" class=""></div>
+              <div id="u6894_text" class="text ">
+                <p><span>库存类型：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u6895" class="ax_default" data-left="348" data-top="207" data-width="180" data-height="35">
+
+              <!-- Unnamed (Rectangle) -->
+              <div id="u6896" class="ax_default _默认样式">
+                <div id="u6896_div" class=""></div>
+                <div id="u6896_text" class="text ">
+                  <p><span>全部</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Rectangle) [footnote] -->
+              <div id="u6896_ann" class="annotation"></div>
+
+              <!-- Unnamed (Shape) -->
+              <div id="u6897" class="ax_default _默认样式">
+                <img id="u6897_img" class="img " src="images/选择组件/u1037.png"/>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6898" class="ax_default _默认样式">
+              <div id="u6898_div" class=""></div>
+              <div id="u6898_text" class="text ">
+                <p><span>操作类型：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u6899" class="ax_default" data-left="67" data-top="305" data-width="180" data-height="35">
+
+              <!-- Unnamed (Rectangle) -->
+              <div id="u6900" class="ax_default _默认样式">
+                <div id="u6900_div" class=""></div>
+                <div id="u6900_text" class="text ">
+                  <p><span>全部</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Rectangle) [footnote] -->
+              <div id="u6900_ann" class="annotation"></div>
+
+              <!-- Unnamed (Shape) -->
+              <div id="u6901" class="ax_default _默认样式">
+                <img id="u6901_img" class="img " src="images/选择组件/u1037.png"/>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6902" class="ax_default _默认样式">
+              <div id="u6902_div" class=""></div>
+              <div id="u6902_text" class="text ">
+                <p><span>操作人员：</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u6903" class="ax_default _默认样式">
+              <div id="u6903_div" class=""></div>
+              <div id="u6903_text" class="text ">
+                <p><span>订单编号</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u6904" class="ax_default" data-left="349" data-top="304" data-width="180" data-height="35">
+
+              <!-- Unnamed (Rectangle) -->
+              <div id="u6905" class="ax_default _默认样式">
+                <div id="u6905_div" class=""></div>
+                <div id="u6905_text" class="text ">
+                  <p style="font-size:12px;"><span style="font-family:'微软雅黑';font-weight:400;">请</span><span style="font-family:'微软雅黑';font-weight:400;font-size:14px;">选择时间</span></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Shape) -->
+              <div id="u6906" class="ax_default _默认样式">
+                <img id="u6906_img" class="img " src="images/订单列表/u3789.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (标题通栏) -->
+
+      <!-- 灰色背景 (Dynamic Panel) -->
+      <div id="u6908" class="ax_default" data-label="灰色背景">
+        <div id="u6908_state0" class="panel_state" data-label="State1" style="">
+          <div id="u6908_state0_content" class="panel_state_content">
+          </div>
+        </div>
+      </div>
+
+      <!-- 线条 (Dynamic Panel) -->
+      <div id="u6909" class="ax_default" data-label="线条">
+        <div id="u6909_state0" class="panel_state" data-label="State1" style="">
+          <div id="u6909_state0_content" class="panel_state_content">
+          </div>
+        </div>
+      </div>
+
+      <!-- 页面标题 (Rectangle) -->
+      <div id="u6910" class="ax_default _默认样式" data-label="页面标题">
+        <img id="u6910_img" class="img " src="images/系统首页/页面标题_u1465.png"/>
+        <div id="u6910_text" class="text ">
+          <p><span>页面标题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6911" class="ax_default _默认样式">
+        <div id="u6911_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6912" class="ax_default _默认样式">
+        <div id="u6912_div" class=""></div>
+        <div id="u6912_text" class="text ">
+          <p style="font-size:18px;"><span style="font-family:'FontAwesome';font-weight:400;"> </span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:12px;"> </span><span style="font-family:'微软雅黑';font-weight:400;font-size:12px;">筛选查询</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6913" class="ax_default _默认样式">
+        <div id="u6913_div" class=""></div>
+        <div id="u6913_text" class="text ">
+          <p><span>操作类型：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6914" class="ax_default _默认样式">
+        <div id="u6914_div" class=""></div>
+        <div id="u6914_text" class="text ">
+          <p><span>输入搜索：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6915" class="ax_default _默认样式">
+        <div id="u6915_div" class=""></div>
+        <div id="u6915_text" class="text ">
+          <p style="font-size:18px;"><span style="font-family:'FontAwesome';font-weight:400;"></span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;font-size:12px;"> </span><span style="font-family:'微软雅黑';font-weight:400;font-size:12px;">数据列表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u6916" class="ax_default _表格">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6917" class="ax_default _默认样式">
+          <img id="u6917_img" class="img " src="images/商品审核/u2508.png"/>
+          <div id="u6917_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6918" class="ax_default _默认样式">
+          <img id="u6918_img" class="img " src="images/商品审核/u2509.png"/>
+          <div id="u6918_text" class="text ">
+            <p><span>编号</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6919" class="ax_default _默认样式">
+          <img id="u6919_img" class="img " src="images/商品审核/u2509.png"/>
+          <div id="u6919_text" class="text ">
+            <p><span>商品图片</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6920" class="ax_default _默认样式">
+          <img id="u6920_img" class="img " src="images/规格参数/u3166.png"/>
+          <div id="u6920_text" class="text ">
+            <p><span>商品名称</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6921" class="ax_default _默认样式">
+          <img id="u6921_img" class="img " src="images/商品分类/u2858.png"/>
+          <div id="u6921_text" class="text ">
+            <p><span>货号/属性</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6922" class="ax_default _默认样式">
+          <img id="u6922_img" class="img " src="images/修改商品信息/u5515.png"/>
+          <div id="u6922_text" class="text ">
+            <p><span>订单号</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6923" class="ax_default _默认样式">
+          <img id="u6923_img" class="img " src="images/商品入库/u6792.png"/>
+          <div id="u6923_text" class="text ">
+            <p><span>库存信息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6924" class="ax_default _默认样式">
+          <img id="u6924_img" class="img " src="images/商品入库/u6792.png"/>
+          <div id="u6924_text" class="text ">
+            <p><span>库存类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6925" class="ax_default _默认样式">
+          <img id="u6925_img" class="img " src="images/商品入库/u6792.png"/>
+          <div id="u6925_text" class="text ">
+            <p><span>操作类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6926" class="ax_default _默认样式">
+          <img id="u6926_img" class="img " src="images/商品评价/u2710.png"/>
+          <div id="u6926_text" class="text ">
+            <p><span>操作信息</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6927" class="ax_default _默认样式">
+          <img id="u6927_img" class="img " src="images/商品入库/u6796.png"/>
+          <div id="u6927_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6928" class="ax_default _默认样式">
+          <img id="u6928_img" class="img " src="images/商品入库/u6797.png"/>
+          <div id="u6928_text" class="text ">
+            <p><span>1000001</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6929" class="ax_default _默认样式">
+          <img id="u6929_img" class="img " src="images/商品入库/u6797.png"/>
+          <div id="u6929_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6930" class="ax_default _默认样式">
+          <img id="u6930_img" class="img " src="images/商品入库/u6799.png"/>
+          <div id="u6930_text" class="text ">
+            <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6931" class="ax_default _默认样式">
+          <img id="u6931_img" class="img " src="images/商品入库/u6800.png"/>
+          <div id="u6931_text" class="text ">
+            <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6932" class="ax_default _默认样式">
+          <img id="u6932_img" class="img " src="images/修改商品信息/u5522.png"/>
+          <div id="u6932_text" class="text ">
+            <p><span>2018061514196905519</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6933" class="ax_default _默认样式">
+          <img id="u6933_img" class="img " src="images/商品入库/u6802.png"/>
+          <div id="u6933_text" class="text ">
+            <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6934" class="ax_default _默认样式">
+          <img id="u6934_img" class="img " src="images/商品入库/u6802.png"/>
+          <div id="u6934_text" class="text ">
+            <p><span>货品库存</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6935" class="ax_default _默认样式">
+          <img id="u6935_img" class="img " src="images/商品入库/u6802.png"/>
+          <div id="u6935_text" class="text ">
+            <p><span>订单提交时</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6936" class="ax_default _默认样式">
+          <img id="u6936_img" class="img " src="images/商品入库/u6805.png"/>
+          <div id="u6936_text" class="text ">
+            <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6937" class="ax_default _默认样式">
+          <img id="u6937_img" class="img " src="images/商品回收站/u2625.png"/>
+          <div id="u6937_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6938" class="ax_default _默认样式">
+          <img id="u6938_img" class="img " src="images/商品回收站/u2626.png"/>
+          <div id="u6938_text" class="text ">
+            <p><span>1000001</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6939" class="ax_default _默认样式">
+          <img id="u6939_img" class="img " src="images/商品回收站/u2626.png"/>
+          <div id="u6939_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6940" class="ax_default _默认样式">
+          <img id="u6940_img" class="img " src="images/商品入库/u6809.png"/>
+          <div id="u6940_text" class="text ">
+            <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6941" class="ax_default _默认样式">
+          <img id="u6941_img" class="img " src="images/商品入库/u6810.png"/>
+          <div id="u6941_text" class="text ">
+            <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6942" class="ax_default _默认样式">
+          <img id="u6942_img" class="img " src="images/修改商品信息/u5529.png"/>
+          <div id="u6942_text" class="text ">
+            <p><span>2018061514196905519</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6943" class="ax_default _默认样式">
+          <img id="u6943_img" class="img " src="images/商品入库/u6812.png"/>
+          <div id="u6943_text" class="text ">
+            <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6944" class="ax_default _默认样式">
+          <img id="u6944_img" class="img " src="images/商品入库/u6812.png"/>
+          <div id="u6944_text" class="text ">
+            <p><span>货品库存</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6945" class="ax_default _默认样式">
+          <img id="u6945_img" class="img " src="images/商品入库/u6812.png"/>
+          <div id="u6945_text" class="text ">
+            <p><span>订单发货时</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u6946" class="ax_default _默认样式">
+          <img id="u6946_img" class="img " src="images/商品入库/u6815.png"/>
+          <div id="u6946_text" class="text ">
+            <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Repeater) -->
+      <div id="u6947" class="ax_default">
+        <script id="u6947_script" type="axure-repeater-template">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948" class="ax_default _表格 u6948">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949" class="ax_default _默认样式 u6949">
+              <img id="u6949_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949_text" class="text u6949_text">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950" class="ax_default _默认样式 u6950">
+              <img id="u6950_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950_text" class="text u6950_text">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951" class="ax_default _默认样式 u6951">
+              <img id="u6951_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951_text" class="text u6951_text">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952" class="ax_default _默认样式 u6952">
+              <img id="u6952_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952_text" class="text u6952_text">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953" class="ax_default _默认样式 u6953">
+              <img id="u6953_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953_text" class="text u6953_text">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954" class="ax_default _默认样式 u6954">
+              <img id="u6954_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954_text" class="text u6954_text">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955" class="ax_default _默认样式 u6955">
+              <img id="u6955_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955_text" class="text u6955_text">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956" class="ax_default _默认样式 u6956">
+              <img id="u6956_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956_text" class="text u6956_text">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957" class="ax_default _默认样式 u6957">
+              <img id="u6957_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957_text" class="text u6957_text">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958" class="ax_default _默认样式 u6958">
+              <img id="u6958_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958_text" class="text u6958_text">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </script>
+        <div id="u6947-1" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-1" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-1" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-1_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-1_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-1" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-1_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-1_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-1" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-1_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-1_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-1" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-1_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-1_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-1" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-1_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-1_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-1" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-1_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-1_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-1" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-1_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-1_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-1" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-1_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-1_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-1" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-1_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-1_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-1" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-1_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-1_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-2" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-2" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-2" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-2_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-2_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-2" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-2_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-2_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-2" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-2_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-2_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-2" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-2_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-2_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-2" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-2_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-2_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-2" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-2_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-2_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-2" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-2_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-2_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-2" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-2_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-2_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-2" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-2_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-2_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-2" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-2_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-2_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-3" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-3" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-3" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-3_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-3_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-3" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-3_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-3_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-3" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-3_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-3_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-3" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-3_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-3_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-3" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-3_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-3_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-3" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-3_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-3_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-3" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-3_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-3_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-3" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-3_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-3_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-3" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-3_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-3_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-3" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-3_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-3_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-4" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-4" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-4" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-4_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-4_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-4" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-4_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-4_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-4" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-4_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-4_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-4" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-4_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-4_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-4" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-4_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-4_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-4" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-4_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-4_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-4" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-4_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-4_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-4" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-4_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-4_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-4" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-4_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-4_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-4" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-4_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-4_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-5" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-5" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-5" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-5_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-5_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-5" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-5_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-5_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-5" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-5_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-5_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-5" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-5_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-5_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-5" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-5_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-5_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-5" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-5_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-5_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-5" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-5_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-5_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-5" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-5_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-5_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-5" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-5_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-5_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-5" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-5_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-5_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-6" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-6" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-6" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-6_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-6_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-6" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-6_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-6_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-6" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-6_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-6_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-6" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-6_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-6_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-6" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-6_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-6_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-6" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-6_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-6_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-6" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-6_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-6_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-6" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-6_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-6_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-6" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-6_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-6_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-6" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-6_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-6_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-7" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-7" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-7" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-7_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-7_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-7" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-7_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-7_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-7" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-7_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-7_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-7" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-7_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-7_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-7" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-7_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-7_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-7" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-7_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-7_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-7" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-7_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-7_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-7" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-7_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-7_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-7" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-7_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-7_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-7" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-7_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-7_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-8" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-8" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-8" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-8_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-8_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-8" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-8_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-8_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-8" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-8_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-8_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-8" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-8_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-8_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-8" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-8_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-8_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-8" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-8_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-8_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-8" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-8_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-8_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-8" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-8_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-8_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-8" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-8_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-8_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-8" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-8_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-8_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u6947-9" class="preeval" style="width: 1100px; height: 79px;">
+
+          <!-- Unnamed (Table) -->
+          <div id="u6948-9" class="ax_default _表格 u6948" style="visibility: inherit">
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6949-9" class="ax_default _默认样式 u6949" style="width: 50px; height: 80px; left: 0px; top: 0px;visibility: inherit">
+              <img id="u6949-9_img" class="img u6949_img" src="images/商品回收站/u2625.png"/>
+              <div id="u6949-9_text" class="text u6949_text" style="position: absolute;left: 2px;top: 26px;width: 46px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6950-9" class="ax_default _默认样式 u6950" style="width: 100px; height: 80px; left: 50px; top: 0px;visibility: inherit">
+              <img id="u6950-9_img" class="img u6950_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6950-9_text" class="text u6950_text" style="position: absolute;left: 2px;top: 26px;width: 96px;visibility: inherit">
+                <p><span>1000001</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6951-9" class="ax_default _默认样式 u6951" style="width: 100px; height: 80px; left: 150px; top: 0px;visibility: inherit">
+              <img id="u6951-9_img" class="img u6951_img" src="images/商品回收站/u2626.png"/>
+              <div id="u6951-9_text" class="text u6951_text" style="position: absolute;left: 0px;top: 26px;width: 98px;visibility: inherit">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6952-9" class="ax_default _默认样式 u6952" style="width: 190px; height: 80px; left: 250px; top: 0px;visibility: inherit">
+              <img id="u6952-9_img" class="img u6952_img" src="images/商品入库/u6809.png"/>
+              <div id="u6952-9_text" class="text u6952_text" style="position: absolute;left: 10px;top: 12px;width: 178px;visibility: inherit">
+                <p><span>2018 iphoneXsMax128GB</span></p><p><span>品牌：Apple Inc.</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6953-9" class="ax_default _默认样式 u6953" style="width: 120px; height: 80px; left: 440px; top: 0px;visibility: inherit">
+              <img id="u6953-9_img" class="img u6953_img" src="images/商品入库/u6810.png"/>
+              <div id="u6953-9_text" class="text u6953_text" style="position: absolute;left: 10px;top: 12px;width: 108px;visibility: inherit">
+                <p><span>货号：No999999</span></p><p><span>属性：红色/X</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6954-9" class="ax_default _默认样式 u6954" style="width: 150px; height: 80px; left: 560px; top: 0px;visibility: inherit">
+              <img id="u6954-9_img" class="img u6954_img" src="images/修改商品信息/u5529.png"/>
+              <div id="u6954-9_text" class="text u6954_text" style="position: absolute;left: 10px;top: 26px;width: 138px;visibility: inherit">
+                <p><span>2018061514196905519</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6955-9" class="ax_default _默认样式 u6955" style="width: 80px; height: 80px; left: 710px; top: 0px;visibility: inherit">
+              <img id="u6955-9_img" class="img u6955_img" src="images/商品入库/u6812.png"/>
+              <div id="u6955-9_text" class="text u6955_text" style="position: absolute;left: 10px;top: 12px;width: 68px;visibility: inherit">
+                <p><span>数量：-1</span></p><p><span>剩余：100</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6956-9" class="ax_default _默认样式 u6956" style="width: 80px; height: 80px; left: 790px; top: 0px;visibility: inherit">
+              <img id="u6956-9_img" class="img u6956_img" src="images/商品入库/u6812.png"/>
+              <div id="u6956-9_text" class="text u6956_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>货品库存</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6957-9" class="ax_default _默认样式 u6957" style="width: 80px; height: 80px; left: 870px; top: 0px;visibility: inherit">
+              <img id="u6957-9_img" class="img u6957_img" src="images/商品入库/u6812.png"/>
+              <div id="u6957-9_text" class="text u6957_text" style="position: absolute;left: 2px;top: 26px;width: 76px;visibility: inherit">
+                <p><span>订单发货时</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Table Cell) -->
+            <div id="u6958-9" class="ax_default _默认样式 u6958" style="width: 150px; height: 80px; left: 950px; top: 0px;visibility: inherit">
+              <img id="u6958-9_img" class="img u6958_img" src="images/商品入库/u6815.png"/>
+              <div id="u6958-9_text" class="text u6958_text" style="position: absolute;left: 10px;top: 12px;width: 138px;visibility: inherit">
+                <p><span>admin</span></p><p><span>2018-07-24 17:25:38</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6959" class="ax_default _默认样式">
+        <div id="u6959_div" class=""></div>
+        <div id="u6959_text" class="text ">
+          <p><span>操作时间：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6960" class="ax_default _默认样式">
+        <div id="u6960_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6961" class="ax_default" data-left="199" data-top="1172" data-width="80" data-height="30">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6962" class="ax_default _默认样式">
+          <div id="u6962_div" class=""></div>
+          <div id="u6962_text" class="text ">
+            <p><span>确定</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6963" class="ax_default" data-left="837" data-top="80" data-width="244" data-height="30">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6964" class="ax_default _默认样式">
+          <div id="u6964_div" class=""></div>
+          <div id="u6964_text" class="text ">
+            <p><span style="font-family:'FontAwesome';font-weight:400;"></span><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"> </span><span style="font-family:'微软雅黑';font-weight:400;">收起筛选</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6965" class="ax_default _默认样式">
+          <div id="u6965_div" class=""></div>
+          <div id="u6965_text" class="text ">
+            <p><span>高级检索</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6966" class="ax_default _默认样式">
+          <div id="u6966_div" class=""></div>
+          <div id="u6966_text" class="text ">
+            <p><span>查询结果</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (bottom) -->
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6968" class="ax_default _默认样式">
+        <img id="u6968_img" class="img " src="images/登录界面/u1256.png"/>
+        <div id="u6968_text" class="text ">
+          <p><span>Copyright © 黑马程序员, All Rights Reserved.</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (刷新) -->
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6970" class="ax_default _默认样式" title="刷新">
+        <div id="u6970_div" class=""></div>
+        <div id="u6970_text" class="text ">
+          <p><span>刷新</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6971" class="ax_default" data-left="11" data-top="6" data-width="19" data-height="17">
+
+        <!-- Unnamed (Shape) -->
+        <div id="u6972" class="ax_default _默认样式">
+          <img id="u6972_img" class="img " src="images/常用元素/u71.png"/>
+        </div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u6973" class="ax_default _默认样式">
+          <img id="u6973_img" class="img " src="images/常用元素/u72.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (完整分页插件) -->
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6975" class="ax_default _默认样式">
+        <div id="u6975_div" class=""></div>
+        <div id="u6975_text" class="text ">
+          <p><span>共</span><span style="color:#FF3C2C;">10</span><span>页/</span><span style="color:#FF0000;">100</span><span>条数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6976" class="ax_default" data-left="139" data-top="0" data-width="350" data-height="25">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6977" class="ax_default _默认样式 selected">
+          <img id="u6977_img" class="img " src="images/常用元素/u445_selected.png"/>
+          <div id="u6977_text" class="text ">
+            <p><span>1</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6978" class="ax_default _默认样式">
+          <img id="u6978_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6978_text" class="text ">
+            <p><span>2</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6979" class="ax_default _默认样式">
+          <img id="u6979_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6979_text" class="text ">
+            <p><span>3</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6980" class="ax_default _默认样式">
+          <img id="u6980_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6980_text" class="text ">
+            <p><span>4</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6981" class="ax_default _默认样式 disabled">
+          <img id="u6981_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6981_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6982" class="ax_default _默认样式">
+          <img id="u6982_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6982_text" class="text ">
+            <p><span>…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6983" class="ax_default _默认样式">
+          <img id="u6983_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6983_text" class="text ">
+            <p><span>5</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6984" class="ax_default _默认样式">
+          <img id="u6984_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6984_text" class="text ">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6985" class="ax_default _默认样式">
+          <img id="u6985_img" class="img " src="images/常用元素/u445.png"/>
+          <div id="u6985_text" class="text ">
+            <p><span>50</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6986" class="ax_default" data-left="509" data-top="0" data-width="99" data-height="25">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6987" class="ax_default _文本段落4">
+          <div id="u6987_div" class=""></div>
+          <div id="u6987_text" class="text ">
+            <p><span>跳至</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6988" class="ax_default _默认样式">
+          <div id="u6988_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6989" class="ax_default _文本段落4">
+          <div id="u6989_div" class=""></div>
+          <div id="u6989_text" class="text ">
+            <p><span>页</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Text Field) -->
+        <div id="u6990" class="ax_default text_field">
+          <input id="u6990_input" type="text" value="1"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6991" class="ax_default _默认样式">
+        <div id="u6991_div" class=""></div>
+        <div id="u6991_text" class="text ">
+          <p><span>商品名称/商品货号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6992" class="ax_default" data-left="423" data-top="132" data-width="180" data-height="35">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6993" class="ax_default _默认样式">
+          <div id="u6993_div" class=""></div>
+          <div id="u6993_text" class="text ">
+            <p><span>全部</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) [footnote] -->
+        <div id="u6993_ann" class="annotation"></div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u6994" class="ax_default _默认样式">
+          <img id="u6994_img" class="img " src="images/选择组件/u1037.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6995" class="ax_default" data-left="875" data-top="208" data-width="99" data-height="30">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6996" class="ax_default _默认样式">
+          <div id="u6996_div" class=""></div>
+          <div id="u6996_text" class="text ">
+            <p><span>显示条数</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u6997" class="ax_default _默认样式">
+          <img id="u6997_img" class="img " src="images/选择组件/u1037.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u6998" class="ax_default" data-left="981" data-top="208" data-width="99" data-height="30">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u6999" class="ax_default _默认样式">
+          <div id="u6999_div" class=""></div>
+          <div id="u6999_text" class="text ">
+            <p><span>排序方式</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u7000" class="ax_default _默认样式">
+          <img id="u7000_img" class="img " src="images/选择组件/u1037.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u7001" class="ax_default" data-left="90" data-top="1172" data-width="99" data-height="30">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u7002" class="ax_default _默认样式">
+          <div id="u7002_div" class=""></div>
+          <div id="u7002_text" class="text ">
+            <p><span>批量操作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) [footnote] -->
+        <div id="u7002_ann" class="annotation"></div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u7003" class="ax_default _默认样式">
+          <img id="u7003_img" class="img " src="images/选择组件/u1037.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u7004" class="ax_default" data-left="0" data-top="1163" data-width="90" data-height="48">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u7005" class="ax_default _默认样式">
+          <img id="u7005_img" class="img " src="images/商品列表/u2130.png"/>
+          <div id="u7005_text" class="text ">
+            <p style="font-size:14px;"><span style="font-family:'FontAwesome';font-weight:400;font-size:16px;"></span><span style="font-family:'微软雅黑';font-weight:400;"> 全选</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u7006" class="ax_default" data-left="727" data-top="132" data-width="180" data-height="35">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u7007" class="ax_default _默认样式">
+          <div id="u7007_div" class=""></div>
+          <div id="u7007_text" class="text ">
+            <p style="font-size:12px;"><span style="font-family:'微软雅黑';font-weight:400;">请</span><span style="font-family:'微软雅黑';font-weight:400;font-size:14px;">选择时间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Shape) -->
+        <div id="u7008" class="ax_default _默认样式">
+          <img id="u7008_img" class="img " src="images/订单列表/u3789.png"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

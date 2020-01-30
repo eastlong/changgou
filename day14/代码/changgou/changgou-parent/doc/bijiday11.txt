@@ -1,0 +1,60 @@
++ 订单的创建
+      + 订单项也要创建
+      + 购物车清空
+      + 库存减少
+      + 增加积分
+      + 赠送优惠卷
++ 页面做出来登录
+
++ 过滤 那些放行的路径
+
+
+
+
++ 异步登录
+	+ thymleaf 
+	+ vue
+
+
+
+
++ 用户的地址列表 (changggou_user)
+
++ 订单的数据在(changgou_order)中  
+
+	+ 一个订单  对应 多个订单选项
+
+	+ 下单之后 需要扣减库存 (changgou_goods 数据库中 sku表中)
+
+		update tb_sku set num=num-#{num},sale_num=salenam+#{num} where id =#{skuid} and num>=#{num}
+
+           feign  controller servcie  dao 
+
+	+ 下单之后 需要清空购物车
+
+	+ 下单之后 需要增加当前的用户的 积分 (changggou_user tb_user)
+		update tb_user set points = points+#{points} where username=#{username}
+
+
+
++ 微信支付
++ 二维码扫描支付
+
+
++ 一维码(条形码) ()
+
+
++ 二维码(使用固定的几何图形,根据规律 组和成黑白相间的图案,二维码(代表的就是数据(需要通过设备扫描出来(计算机的逻辑上的0 1 )))
+
+
+
+
+
+
+
+
+
+
+
+
+

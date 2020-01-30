@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>二维码入门小demo</title>
+<!--1.引入js  2. 创建一个img标签 用来存储显示二维码的图片 3.创建js对象 4.设置js对象的配置项-->
+
+<script src="qrious.js"> </script>
+
+</head>
+<body>
+
+
+<img id="myqrious" >
+
+</body>
+
+<script>
+   var qrious = new QRious({
+   		 element:document.getElementById("myqrious"),// 指定的是图片所在的DOM对象
+   		 size:250,//指定图片的像素大小
+		 level:'H',//指定二维码的容错级别(H:可以恢复30%的数据)
+		 value:'weixin://wxpay/bizpayurl?pr=Hujo6p6'//指定二维码图片代表的真正的值
+   })
+
+</script>
+
+
+</html>

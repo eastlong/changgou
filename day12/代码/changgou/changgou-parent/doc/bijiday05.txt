@@ -1,0 +1,60 @@
++ 搜索 (3天时间)
+
++ elasticsearch	 
++ 安装elastic
++ 安装ik
++ 安装head
++ 安装kibana(类似于head)
+
++ 关键字搜索
+
+
+
+
++ 安装head
+	+ 先拉取镜像
+		docker pull mobz/elasticsearch-head:5
+	+ 执行命令 创建head插件的容器
+		docker run -di --name elasticsearch-head -p 9100:9100 mobz/elasticsearch-head:5
+	+ 重新启动
+		docker restart 	   elasticsearch-head
+
+
+
+ + 配置跨域
+	+ es的elasticsearch.yml 配置 跨域
+
+
+
+
+// 20 指定的显示的日志的行
+docker logs -f -t --tail 20 7a20f9671dbd
+
+
++ 根据 搜索的关键字  查询到的商品 所属的商品的分类 列表展示出来.
+
+	数据库的分组:
+	select category_name from tb_sku where name like '%华为%' GROUP BY category_name
+
+	ES 中也有类似的分组功能
+
+		实现步骤:
+			+ 添加要分组的字段
+			+ 从结果集中获取分组字段对应的数据列表
+
+
+
+
+
++ 创建POJO 
+	+ 动态域  map 用于在搜索中根据规格的名称查询规格的数据
+
+	+ 字段(是否分词 ,是否索引,是否存储 映射)
+
+
+	+ 搜索:
+		+ 关键字搜索	    页面传递 map  后台返回map
+		+ 商品分类的列表的展示 
+			使用到ES中的聚合查询(分组...).
+
+

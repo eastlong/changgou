@@ -1,0 +1,1157 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "微服务工程代码生成器,生成Dao、Service、Controller、Pojo、Feign、Swagger的JSON脚本",
+    "version": "1.0.0",
+    "title": "深圳黑马训练营代码生成器",
+    "termsOfService": "https://github.com/shenkunlin/code-template.git",
+    "contact": {
+      "email": "shenkunlin@itcast.cn"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "tags": [
+        {
+      "name": "SeckillGoodsController",
+      "description": "SeckillGoodsController"
+    },
+    {
+      "name": "SeckillGoodsController",
+      "description": "SeckillGoodsController"
+    },
+    {
+      "name": "SeckillGoodsController",
+      "description": "SeckillGoodsController"
+    },
+    {
+      "name": "SeckillGoodsController",
+      "description": "SeckillGoodsController"
+    },
+    {
+      "name": "SeckillOrderController",
+      "description": "SeckillOrderController"
+    },
+    {
+      "name": "SeckillOrderController",
+      "description": "SeckillOrderController"
+    },
+    {
+      "name": "SeckillOrderController",
+      "description": "SeckillOrderController"
+    },
+    {
+      "name": "SeckillOrderController",
+      "description": "SeckillOrderController"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/seckillGoods": {
+      "get": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "查询所有SeckillGoods",
+        "description": "查询所有SeckillGoods方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillGoods»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "添加SeckillGoods",
+        "description": "添加SeckillGoods方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加SeckillGoods方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillGoods"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/seckillGoods/{id}": {
+      "delete": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "根据ID删除SeckillGoods",
+        "description": "根据ID删除SeckillGoods方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除SeckillGoods方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "根据ID修改SeckillGoods",
+        "description": "根据ID修改SeckillGoods方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改SeckillGoods方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "SeckillGoods",
+            "description": "传入SeckillGoods的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillGoods"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "根据ID查询SeckillGoods",
+        "description": "根据ID查询SeckillGoods方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改SeckillGoods方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«SeckillGoods»"
+            }
+          }
+        }
+      }
+    },
+    "/seckillGoods/search": {
+      "post": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "不带分页条件搜索SeckillGoods",
+        "description": "不带分页条件搜索SeckillGoods方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "SeckillGoods",
+            "description": "传入SeckillGoods的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillGoods"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillGoods»»"
+            }
+          }
+        }
+      }
+    },
+    "/seckillGoods/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "分页列表查询SeckillGoods",
+        "description": "分页列表查询SeckillGoods方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillGoods»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SeckillGoodsController"
+        ],
+        "summary": "分页条件搜索SeckillGoods",
+        "description": "分页条件搜索SeckillGoods方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "SeckillGoods",
+            "description": "传入SeckillGoods的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillGoods"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索SeckillGoods"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillGoods»»"
+            }
+          }
+        }
+      }
+    },
+    "/seckillOrder": {
+      "get": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "查询所有SeckillOrder",
+        "description": "查询所有SeckillOrder方法详情",
+        "operationId": "findAllUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "查询所有SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillOrder»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "添加SeckillOrder",
+        "description": "添加SeckillOrder方法详情",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "添加SeckillOrder方法详情",
+            "required": true
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillOrder"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "添加SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      }
+    },
+    "/seckillOrder/{id}": {
+      "delete": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "根据ID删除SeckillOrder",
+        "description": "根据ID删除SeckillOrder方法详情",
+        "operationId": "deleteUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID删除SeckillOrder方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID删除SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "根据ID修改SeckillOrder",
+        "description": "根据ID修改SeckillOrder方法详情",
+        "operationId": "updateUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改SeckillOrder方法详情",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "SeckillOrder",
+            "description": "传入SeckillOrder的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillOrder"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "根据ID查询SeckillOrder",
+        "description": "根据ID查询SeckillOrder方法详情",
+        "operationId": "findByIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "根据ID修改SeckillOrder方法详情",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "根据ID修改SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«SeckillOrder»"
+            }
+          }
+        }
+      }
+    },
+    "/seckillOrder/search": {
+      "post": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "不带分页条件搜索SeckillOrder",
+        "description": "不带分页条件搜索SeckillOrder方法详情",
+        "operationId": "findListUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "SeckillOrder",
+            "description": "传入SeckillOrder的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillOrder"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillOrder»»"
+            }
+          }
+        }
+      }
+    },
+    "/seckillOrder/search/{page}/{size}": {
+      "get": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "分页列表查询SeckillOrder",
+        "description": "分页列表查询SeckillOrder方法详情",
+        "operationId": "findPageUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "不带分页搜索SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillOrder»»"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SeckillOrderController"
+        ],
+        "summary": "分页条件搜索SeckillOrder",
+        "description": "分页条件搜索SeckillOrder方法详情",
+        "operationId": "findPageUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "page",
+            "description": "当前页",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "size",
+            "description": "每页显示条数",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "SeckillOrder",
+            "description": "传入SeckillOrder的JSON对象",
+            "required": false
+              ,
+              "schema": {
+                "$ref": "#/definitions/SeckillOrder"
+              }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid status value(无效的状态值)"
+                      },
+          "403": {
+            "description": "403 Forbidden(请求被拒绝)"
+                      },
+          "404": {
+            "description": "not found(没有找到相关资源)"
+                      },
+          "405": {
+            "description": "Invalid input(无效的输入)"
+                      },
+          "500": {
+            "description": "服务器内部错误"
+                      },
+          "200": {
+            "description": "分页条件搜索SeckillOrder"
+            ,
+            "schema": {
+              "$ref": "#/definitions/Result«List«SeckillOrder»»"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Result": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "object",
+          "description": "逻辑数据"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«List«SeckillGoods»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/SeckillGoods"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«SeckillGoods»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/SeckillGoods"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "SeckillGoods": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": ""
+        },
+        "supId": {
+          "type": "long",
+          "description": "spu ID"
+        },
+        "skuId": {
+          "type": "long",
+          "description": "sku ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "标题"
+        },
+        "smallPic": {
+          "type": "string",
+          "description": "商品图片"
+        },
+        "price": {
+          "type": "string",
+          "description": "原价格"
+        },
+        "costPrice": {
+          "type": "string",
+          "description": "秒杀价格"
+        },
+        "createTime": {
+          "type": "date",
+          "description": "添加日期"
+        },
+        "checkTime": {
+          "type": "date",
+          "description": "审核日期"
+        },
+        "status": {
+          "type": "string",
+          "description": "审核状态，0未审核，1审核通过，2审核不通过"
+        },
+        "startTime": {
+          "type": "date",
+          "description": "开始时间"
+        },
+        "endTime": {
+          "type": "date",
+          "description": "结束时间"
+        },
+        "num": {
+          "type": "integer",
+          "format": "int32",
+          "description": "秒杀商品数"
+        },
+        "stockCount": {
+          "type": "integer",
+          "format": "int32",
+          "description": "剩余库存数"
+        },
+        "introduction": {
+          "type": "string",
+          "description": "描述"
+        }
+      },
+      "description": "SeckillGoods"
+    },
+    "Result«List«SeckillOrder»»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "type": "array",
+          "description": "逻辑数据",
+          "items": {
+            "$ref": "#/definitions/SeckillOrder"
+          }
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "Result«SeckillOrder»": {
+      "type": "object",
+      "required": [
+        "code",
+        "data",
+        "flag",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "description": "返回状态码,20000:成功,20001:失败,20002:用户名或密码错误,20003:权限不足,20004:远程调用失败,20005:重复操作,20006:没有对应的数据"
+        },
+        "data": {
+          "description": "逻辑数据",
+          "$ref": "#/definitions/SeckillOrder"
+        },
+        "flag": {
+          "type": "boolean",
+          "example": false,
+          "description": "执行是否成功,true:成功,false:失败"
+        },
+        "message": {
+          "type": "string",
+          "description": "提示信息"
+        }
+      },
+      "description": "Result"
+    },
+    "SeckillOrder": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "long",
+          "description": "主键"
+        },
+        "seckillId": {
+          "type": "long",
+          "description": "秒杀商品ID"
+        },
+        "money": {
+          "type": "string",
+          "description": "支付金额"
+        },
+        "userId": {
+          "type": "string",
+          "description": "用户"
+        },
+        "createTime": {
+          "type": "date",
+          "description": "创建时间"
+        },
+        "payTime": {
+          "type": "date",
+          "description": "支付时间"
+        },
+        "status": {
+          "type": "string",
+          "description": "状态，0未支付，1已支付"
+        },
+        "receiverAddress": {
+          "type": "string",
+          "description": "收货人地址"
+        },
+        "receiverMobile": {
+          "type": "string",
+          "description": "收货人电话"
+        },
+        "receiver": {
+          "type": "string",
+          "description": "收货人"
+        },
+        "transactionId": {
+          "type": "string",
+          "description": "交易流水"
+        }
+      },
+      "description": "SeckillOrder"
+    }
+  },
+  "externalDocs": {
+    "description": "黑马训练营畅购微服务商城(http://www.itheima.com)",
+    "url": "https://github.com/shenkunlin/code-template.git"
+  }
+}

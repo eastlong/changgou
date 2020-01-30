@@ -1,0 +1,91 @@
++ 通过lua + canal 实现广告的缓存展示
+
+
++ 首页
+
++ 什么是lua
+	
+	+ 语法
+
++ openresty
+
+
++ openresty + lua + redis  实现广告的展示
+
+
++ 高并发的限流 (nginx)
+	+ 速率
+	+ 连接数
+
++ 数据同步(canal) (监听mysql的表的数据的改变,逻辑处理)
+
+
+
+
++ 流程
+	if (boolean的表达式)
+	then
+	  逻辑处理
+	else
+	  逻辑处理
+	
+	end
+
+
++ 函数 就类似于(方法)
+
+
+
+
++ 测试 使用lua 将数据库的数据 查询出来 压入到redis中
+
+	/update_content?id=1
+
+
+
+	+开发步骤:
+		+ 1.编写lua脚本 (目的 :查询数据库 压入到redis)
+
+		+ 2.配置nginx 指定请求 ,并指定请求由哪一个lua脚本来执行	      /root/lua/update_content.lua
+
+		+ 3.配置nginx能加载lua脚本  user  root root;
+
+
++ 首页展示广告的列表 
+	+ 1先从nginx 取数据 缓存
+	+ 2再redis中 取数据
+	+ 3 在从mysql 取数据
+
+
+	 开发步骤:
+		+ 1.编写lua脚本 (实现1,2,3逻辑)
+		 /root/lua/read_content.lua
+		+ 2.配置nginx 指定请求 ,并指定请求由哪一个lua脚本来执行	
+			+ 1.配置nginx的缓存
+			+ 2.配置lua脚本
+
+
+
+
+
++ canal 
+	+ 安装mysql master
+	+ 配置:开启binlog模式(日志)
+	+ 给canl创建用户名和密码 授权.
+
+
+
+
+	+ 安装canal  (server  )
+
+	+ 配置配置项
+	+ destination scheama
+
+	+ 安装client (java程序 微服务: 连接canal的服务端  做数据同步的处理)
+
+
+ + 客户端搭建
+	+ 创建监听类 监听服务端的数据变化 做处理
+	+ 配置canal的服务端的地址
+	+ 启用canal
+

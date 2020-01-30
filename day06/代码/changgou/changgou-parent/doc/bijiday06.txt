@@ -1,0 +1,241 @@
++ 回顾
+
+	+ kibana 操作ES 
+
+	+ 实现数据导入的功能
+
+	+ javabean skuinfo
+		+ 字段 参考数据库的表字段
+
+		+ 动态域 (规格的数据搜索的时候 使用map)
+
+
+	+ 关键字的搜索
+		请求:/search
+		参数: Map: searchMap={keywords:"手机",brand.....}
+		返回值:Map:resultMap={rows:[],total,toalPAGES:....}
+
+		通过 匹配查询(先分词再查询)
+
+	+ 商品分类的列表展示
+		+ 分组查询来实现. 类似于sql group by 
+
+
+
+
+
++ 品牌的列表展示
+	+ 根据条件 查询 分组品牌的字段 展示数据	     
+
+	+ 步骤:
+		+ 设置分组   分组的别名 分组的字段 分组字段数据展示 设置大小.(默认是10)
+		+ 获取分组的结果
+
+	+ 分组查询的时候 分组的字段 一定要是数据类型为keyword(不分词的类型)
+
+
++ 规格的列表展示
+	+ 设置分组  按照字段 spec 
+	+ 获取分组的结果 
+	+ 结果进行(一顿操作)
+	+ 返回map
+
+
++ 多条件组合过滤查询	(词条查询  条件为:must)
+	+ 商品分类过滤 查询
+	+ 品牌  过滤查询
+
+
++ 商品分类的过滤查询
+	
+	  请求:/search
+		参数: Map: searchMap={keywords:"手机","category":"笔记本"}
+		返回值:Map:resultMap={rows:[],total,toalPAGES:....}
+		 返回值:Map:resultMap={rows:[],total,toalPAGES:....}
+
+	  后台:
+		+接收页面传递的参数map 解析出 分类key对应的值
+		+执行过滤查询
+
+
+
+ + filter  
+	 在 boolean 表示 必须要满足 特点就是 和MUST类似的功能,不做分数的匹配. 速度快
+ + must
+	 在 boolean 表示 必须要满足 特点就是  做分数的匹配度的 查询. 速度慢
+
+
+
+
+ + 分页查询
+	前端:
+		+当前页码
+		+每页显示的行  
+	
+	后台接收:pageNum pageSize:默认值60  执行分页查询
+
++ 排序   默认是排序的.
+
+	+ 前端  
+		+ 传递一个要排序的字段 	(price  categoryName)
+		+ 传递一个排序的类型(ASC DESC)
+	+ 后台
+		接收 要排序的字段
+		接收 要排序的类型
+
+		执行排序的动作.
+
++ 高亮的实现
+	+ 需求: 高亮 就是针对要搜素的关键字  将其截取出来 加入样式  展示页面中
+
+	+ 实现:
+		+ 设置高亮的字段 ,设置高亮的前缀 和后缀
+
+		+ 从结果集中获取高亮的数据   自定义结果集映射.
+
+
+
+
+=====额外网站====
+
++ 多字段值设置 keywords
+    https://www.elastic.co/guide/en/elasticsearch/reference/5.6/multi-fields.html
++ 分组查询
+    https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html#search-aggregations-bucket-terms-aggregation-size
+
+
+
++ ES 聚合分组的查询
+	+ 分组查询的分组字段 一定要是keyword类型     spec.keyword 
+
++ 过滤查询
+	boolean       为了性能好 采用了filter 类似于must
+
+
++高亮
+	 默认是没有高亮
+	自定义结果集的映射  获取高亮的数据
+
+
+
+DSL语句:
+GET skuinfo/_search
+{
+  "query": {
+    "match": {
+      "name": "显示"
+    }
+  },"aggs": {
+    "categorygroup": {
+      "terms": {
+        "field": "categoryName",
+        "size": 10
+      }
+    },
+    "brandgroup":{
+      "terms": {
+        "field": "brandName",
+        "size": 50
+      }
+    }
+  },
+  "highlight": {
+    "fields": {"name": { "pre_tags": [ "<em style='color=red>'" ], "post_tags": [ "</em>" ] } }
+  }
+  
+}
+
+
+
+
+# fenzu分组chax分组查询  
+GET skuinfo/_search
+{
+  "query": {
+    "match": {
+      "name": "手机"
+    }
+  },
+  "aggs": {
+    "skuCategorygroup": {
+      "terms": {
+        "field": "categoryName",
+        "size": 30
+      }
+    },
+    "skuBrandgroup":{
+      "terms": {
+        "field": "spec.keyword",
+        "size": 100
+      }
+    }
+  }
+}
+
+# boole query
+GET skuinfo/_search
+{
+  "query": {
+  
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "categoryName": {
+              "value": "手机"
+            }
+          }
+        },{
+          "term": {
+            "brandName": {
+              "value": "TCL"
+            }
+          }
+        },{
+          "range": {
+            "price": {
+              "gte": 10,
+              "lte": 20
+            }
+          }
+        }
+      ]
+    }
+    
+  },
+
+  "from": 0,
+  "size": 20,
+  "sort": [
+    {
+      "price": {
+        "order": "asc"
+      }
+    }
+  ],  
+  "aggs": {
+    "skuCategorygroup": {
+      "terms": {
+        "field": "categoryName",
+        "size": 30
+      }
+    },
+    "skuBrandgroup":{
+      "terms": {
+        "field": "spec.keyword",
+        "size": 100
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+	
+

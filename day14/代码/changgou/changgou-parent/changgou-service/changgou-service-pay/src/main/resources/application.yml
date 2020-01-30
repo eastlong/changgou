@@ -1,0 +1,52 @@
+server:
+  port: 18092
+spring:
+  application:
+    name: pay
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: 192.168.211.132
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+        #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+
+#微信支付信息配置
+weixin:
+  appid: wx8397f8696b538317
+  partner: 1473426802
+  partnerkey: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+  notifyurl: http://2cw4969042.wicp.vip:39452/weixin/pay/notify/url
+
+mq:
+  pay:
+    exchange:
+      order: exchange.order
+      seckillorder: exchange.seckillorder
+    queue:
+      order: queue.order
+      seckillorder: queue.seckillorder
+    routing:
+      key: queue.order
+      seckillkey: queue.seckillorder
+
+ext:
+  a: abc
+  b: def

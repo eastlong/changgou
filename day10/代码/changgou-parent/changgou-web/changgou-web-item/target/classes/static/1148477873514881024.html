@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>畅购</title>
+	 <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pages-item.css" />
+    <link rel="stylesheet" type="text/css" href=" /css/pages-zoom.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+
+<body>
+
+
+<!--页面顶部-->
+<div id="nav-bottom">
+	<!--顶部-->
+	<div class="nav-top" >
+		<div class="top">
+			<div class="py-container">
+				<div class="shortcut">
+					<ul class="fl">
+						<li class="f-item">畅购欢迎您！</li>
+						<li class="f-item">请<a href="login.html" target="_blank">登录</a>　<span><a href="register.html" target="_blank">免费注册</a></span></li>
+					</ul>
+					<div class="fr typelist">
+						<ul class="types">
+							<li class="f-item"><span>我的订单</span></li>
+
+							<li class="f-item"><span><a href="cart.html" target="_blank">我的购物车</a></span></li>
+							<li class="f-item"><span><a href="home.html" target="_blank">我的畅购</a></span></li>
+							<li class="f-item"><span>畅购会员</span></li>
+							<li class="f-item"><span>企业采购</span></li>
+							<li class="f-item"><span>关注畅购</span></li>
+							<li class="f-item"><span><a href="cooperation.html" target="_blank">合作招商</a></span></li>
+							<li class="f-item"><span><a href="shoplogin.html" target="_blank">商家后台</a></span></li>
+							<li class="f-item"><span>网站导航</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--头部-->
+		<div class="header">
+			<div class="py-container">
+				<div class="yui3-g Logo">
+					<div class="yui3-u Left logoArea">
+						<a class="logo-bd" title="畅购" href="JD-index.html" target="_blank"></a>
+					</div>
+					<div class="yui3-u Rit searchArea">
+						<div class="search">
+							<form action="" class="sui-form form-inline">
+								<!--searchAutoComplete-->
+								<div class="input-append">
+									<input type="text" id="autocomplete" class="input-error input-xxlarge" />
+									<button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- 商品分类导航 -->
+	<div class="typeNav">
+			<div class="py-container">
+				<div class="yui3-g NavList">
+    <div class="all-sorts-list">
+        <div class="yui3-u Left all-sort">
+            <h4>全部商品分类</h4>
+        </div>
+        <div class="sort">
+                <div class="all-sort-list2">
+                    <div class="item bo">
+                        <h3><a href="">图书、音像、数字商品</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书</a></dt>
+                                    <dd><a href="">免费</a><a href="">小说</a></em><a href="">励志与成功</a><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <h3><a href="">家用电器</a></h3>
+                            <div class="item-list clearfix">
+                                <div class="subitem">
+                                    <dl class="fore1">
+                                        <dt><a href="">电子书1</a></dt>
+                                        <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                    </dl>
+                                    <dl class="fore2">
+                                        <dt><a href="">数字音乐</a></dt>
+                                        <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                    </dl>
+                                    <dl class="fore3">
+                                        <dt><a href="">音像</a></dt>
+                                        <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                    </dl>
+                                    <dl class="fore4">
+                                        <dt>文艺</dt>
+                                        <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                    </dl>
+                                    <dl class="fore5">
+                                        <dt>人文社科</dt>
+                                        <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                    </dl>
+                                    <dl class="fore6">
+                                        <dt>经管励志</dt>
+                                        <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                    </dl>
+                                    <dl class="fore7">
+                                        <dt>生活</dt>
+                                        <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                    </dl>
+                                    <dl class="fore8">
+                                        <dt>科技</dt>
+                                        <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                    </dl>
+                                    <dl class="fore9">
+                                        <dt>少儿</dt>
+                                        <dd><em><a href="">少儿</a></em><em><a href="">0-2岁</a></em><em><a href="">3-6岁</a></em><em><a href="">7-10岁</a></em><em><a href="">11-14岁</a></em></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">手机、数码</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书2</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                                <dl class="fore5">
+                                    <dt>人文社科</dt>
+                                    <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">电脑、办公</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书3</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                                <dl class="fore5">
+                                    <dt>人文社科</dt>
+                                    <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                </dl>
+                                <dl class="fore6">
+                                    <dt>经管励志</dt>
+                                    <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                </dl>
+                                <dl class="fore7">
+                                    <dt>生活</dt>
+                                    <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                </dl>
+                                <dl class="fore8">
+                                    <dt>科技</dt>
+                                    <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                </dl>
+                                <dl class="fore9">
+                                    <dt>少儿</dt>
+                                    <dd><em><a href="">少儿</a></em><em><a href="">0-2岁</a></em><em><a href="">3-6岁</a></em><em><a href="">7-10岁</a></em><em><a href="">11-14岁</a></em></dd>
+                                </dl>
+                                <dl class="fore10">
+                                    <dt>教育</dt>
+                                    <dd><em><a href="">教材教辅</a></em><em><a href="">考试</a></em><em><a href="">外语学习</a></em></dd>
+                                </dl>
+                                <dl class="fore11">
+                                    <dt>其它</dt>
+                                    <dd><em><a href="">英文原版书</a></em><em><a href="">港台图书</a></em><em><a href="">工具书</a></em><em><a href="">套装书</a></em><em><a href="">杂志/期刊</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <h3><a href="">家居、家具、家装、厨具</a></h3>
+                            <div class="item-list clearfix">
+                                <div class="subitem">
+                                    <dl class="fore1">
+                                        <dt><a href="">电子书4</a></dt>
+                                        <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                    </dl>
+                                    <dl class="fore2">
+                                        <dt><a href="">数字音乐</a></dt>
+                                        <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                    </dl>
+                                    <dl class="fore3">
+                                        <dt><a href="">音像</a></dt>
+                                        <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                    </dl>
+                                    <dl class="fore4">
+                                        <dt>文艺</dt>
+                                        <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                    </dl>
+                                    <dl class="fore5">
+                                        <dt>人文社科</dt>
+                                        <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                    </dl>
+                                    <dl class="fore6">
+                                        <dt>经管励志</dt>
+                                        <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                    </dl>
+                                    <dl class="fore7">
+                                        <dt>生活</dt>
+                                        <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                    </dl>
+                                    <dl class="fore8">
+                                        <dt>科技</dt>
+                                        <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                    </dl>
+                                    <dl class="fore9">
+                                        <dt>少儿</dt>
+                                        <dd><em><a href="">少儿</a></em><em><a href="">0-2岁</a></em><em><a href="">3-6岁</a></em><em><a href="">7-10岁</a></em><em><a href="">11-14岁</a></em></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">服饰内衣</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书5</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                                <dl class="fore5">
+                                    <dt>人文社科</dt>
+                                    <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                </dl>
+                                <dl class="fore6">
+                                    <dt>经管励志</dt>
+                                    <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                </dl>
+                                <dl class="fore7">
+                                    <dt>生活</dt>
+                                    <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                </dl>
+                                <dl class="fore8">
+                                    <dt>科技</dt>
+                                    <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">个护化妆</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书6</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                                <dl class="fore5">
+                                    <dt>人文社科</dt>
+                                    <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                </dl>
+                                <dl class="fore6">
+                                    <dt>经管励志</dt>
+                                    <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                </dl>
+                                <dl class="fore7">
+                                    <dt>生活</dt>
+                                    <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                </dl>
+                                <dl class="fore8">
+                                    <dt>科技</dt>
+                                    <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                </dl>
+                                <dl class="fore9">
+                                    <dt>少儿</dt>
+                                    <dd><em><a href="">少儿</a></em><em><a href="">0-2岁</a></em><em><a href="">3-6岁</a></em><em><a href="">7-10岁</a></em><em><a href="">11-14岁</a></em></dd>
+                                </dl>
+                                <dl class="fore10">
+                                    <dt>教育</dt>
+                                    <dd><em><a href="">教材教辅</a></em><em><a href="">考试</a></em><em><a href="">外语学习</a></em></dd>
+                                </dl>
+                                <dl class="fore11">
+                                    <dt>其它</dt>
+                                    <dd><em><a href="">英文原版书</a></em><em><a href="">港台图书</a></em><em><a href="">工具书</a></em><em><a href="">套装书</a></em><em><a href="">杂志/期刊</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">运动健康</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书7</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                            </div>
+                            <div class="cat-right">
+                                <dl class="categorys-brands" clstag="homepage|keycount|home2013|0601d">
+                                    <dt>推荐品牌出版商</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>
+                                                <a href="">中华书局</a>
+                                            </li>
+                                            <li>
+                                                <a href="">人民邮电出版社</a>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">汽车用品</a></h3>
+                        <div class="item-list clearfix">
+                            <div class="subitem">
+                                <dl class="fore1">
+                                    <dt><a href="">电子书8</a></dt>
+                                    <dd><em><a href="">免费</a></em><em><a href="">小说</a></em><em><a href="">励志与成功</a></em><em><a href="">婚恋/两性</a></em><em><a href="">文学</a></em><em><a href="">经管</a></em><em><a href="">畅读VIP</a></em></dd>
+                                </dl>
+                                <dl class="fore2">
+                                    <dt><a href="">数字音乐</a></dt>
+                                    <dd><em><a href="">通俗流行</a></em><em><a href="">古典音乐</a></em><em><a href="">摇滚说唱</a></em><em><a href="">爵士蓝调</a></em><em><a href="">乡村民谣</a></em><em><a href="">有声读物</a></em></dd>
+                                </dl>
+                                <dl class="fore3">
+                                    <dt><a href="">音像</a></dt>
+                                    <dd><em><a href="">音乐</a></em><em><a href="">影视</a></em><em><a href="">教育音像</a></em><em><a href="">游戏</a></em></dd>
+                                </dl>
+                                <dl class="fore4">
+                                    <dt>文艺</dt>
+                                    <dd><em><a href="">小说</a></em><em><a href="">文学</a></em><em><a href="">青春文学</a></em><em><a href="">传记</a></em><em><a href="">艺术</a></em></dd>
+                                </dl>
+                                <dl class="fore5">
+                                    <dt>人文社科</dt>
+                                    <dd><em><a href="">历史</a></em><em><a href="">心理学</a></em><em><a href="">政治/军事</a></em><em><a href="">国学/古籍</a></em><em><a href="">哲学/宗教</a></em><em><a href="">社会科学</a></em></dd>
+                                </dl>
+                                <dl class="fore6">
+                                    <dt>经管励志</dt>
+                                    <dd><em><a href="">经济</a></em><em><a href="">金融与投资</a></em><em><a href="">管理</a></em><em><a href="">励志与成功</a></em></dd>
+                                </dl>
+                                <dl class="fore7">
+                                    <dt>生活</dt>
+                                    <dd><em><a href="">家庭与育儿</a></em><em><a href="">旅游/地图</a></em><em><a href="">烹饪/美食</a></em><em><a href="">时尚/美妆</a></em><em><a href="">家居</a></em><em><a href="">婚恋与两性</a></em><em><a href="">娱乐/休闲</a></em><em><a href="">健身与保健</a></em><em><a href="">动漫/幽默</a></em><em><a href="">体育/运动</a></em></dd>
+                                </dl>
+                                <dl class="fore8">
+                                    <dt>科技</dt>
+                                    <dd><em><a href="">科普</a></em><em><a href="">IT</a></em><em><a href="">建筑</a></em><em><a href="">医学</a></em><em><a href="">工业技术</a></em><em><a href="">电子/通信</a></em><em><a href="">农林</a></em><em><a href="">科学与自然</a></em></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">彩票、旅行</a></h3>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">理财、众筹</a></h3>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">母婴、玩具</a></h3>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">箱包</a></h3>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">运动户外</a></h3>
+                    </div>
+                    <div class="item">
+                        <h3><a href="">箱包</a></h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="yui3-u Center navArea">
+        <ul class="nav">
+            <li class="f-item">服装城</li>
+            <li class="f-item">美妆馆</li>
+            <li class="f-item">畅购超市</li>
+            <li class="f-item">全球购</li>
+            <li class="f-item">闪购</li>
+            <li class="f-item">团购</li>
+            <li class="f-item">有趣</li>
+            <li class="f-item"><a href="seckill-index.html" target="_blank">秒杀</a></li>
+        </ul>
+    </div>
+    <div class="yui3-u Right"></div>
+</div>
+			</div>
+		</div>
+	<div class="py-container">
+		<div id="item">
+			<div class="crumb-wrap">
+				<ul class="sui-breadcrumb">
+					<li>
+						<a href="#">家用电器</a>
+					</li>
+					<li>
+						<a href="#">大家电</a>
+					</li>
+					<li>
+						<a href="#">平板电视</a>
+					</li>
+				</ul>
+			</div>
+			<!--product-info-->
+			<div class="product-info">
+				<div class="fl preview-wrap">
+					<!--放大镜效果-->
+					<div class="zoom">
+						<!--默认第一个预览-->
+						<div id="preview" class="spec-preview">
+							<span class="jqzoom"><img jqimg="http://img11.360buyimg.com/n7/jfs/t1/21612/38/4767/334593/5c3582e4E8fd541ce/a17353d206e19e68.jpg" src="http://img11.360buyimg.com/n7/jfs/t1/21612/38/4767/334593/5c3582e4E8fd541ce/a17353d206e19e68.jpg" /></span>
+						</div>
+						<!--下方的缩略图-->
+						<div class="spec-scroll">
+							<a class="prev">&lt;</a>
+							<!--左右按钮-->
+							<div class="items">
+								<ul>
+                                    <li><img src="http://img11.360buyimg.com/n7/jfs/t1/21612/38/4767/334593/5c3582e4E8fd541ce/a17353d206e19e68.jpg"  bimg="http://img11.360buyimg.com/n7/jfs/t1/21612/38/4767/334593/5c3582e4E8fd541ce/a17353d206e19e68.jpg" onmousemove="preview(this)" /></li>
+                                    <li><img src="http://img13.360buyimg.com/n7/jfs/t1/39124/14/10388/134846/5d1b2496E9e9b5b7c/374d96244d788873.jpg"  bimg="http://img13.360buyimg.com/n7/jfs/t1/39124/14/10388/134846/5d1b2496E9e9b5b7c/374d96244d788873.jpg" onmousemove="preview(this)" /></li>
+                                    <li><img src="http://img13.360buyimg.com/n8/jfs/t1/23382/26/12621/140101/5c98c074E9b4b39fb/d0270b6dcf930379.jpg"  bimg="http://img13.360buyimg.com/n8/jfs/t1/23382/26/12621/140101/5c98c074E9b4b39fb/d0270b6dcf930379.jpg" onmousemove="preview(this)" /></li>
+                                    <li><img src="http://img10.360buyimg.com/n7/jfs/t27247/67/2175778313/348661/d5306dd8/5bf86dcaN20a58cd6.jpg"  bimg="http://img10.360buyimg.com/n7/jfs/t27247/67/2175778313/348661/d5306dd8/5bf86dcaN20a58cd6.jpg" onmousemove="preview(this)" /></li>
+								</ul>
+							</div>
+							<a class="next">&gt;</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="fr itemInfo-wrap"id="itemArray">
+					<div class="sku-name">
+						<h4 >{{sku.name}}</h4>
+					</div>
+					<div class="news"><span>扩弱别闻啦否詹轿赃聂蛹地挟崩匿皑弄</span></div>
+					<div class="summary">
+						<div class="summary-wrap" >
+							<div class="fl title">
+								<i>价　　格</i>
+							</div>
+							<div class="fl price">
+								<i>¥</i>
+								<em>{{sku.price}}</em>
+								<span>降价通知</span>
+							</div>
+							<div class="fr remark">
+								<i>累计评价</i><em>612188</em>
+							</div>
+						</div>
+						<div class="summary-wrap">
+							<div class="fl title">
+								<i>促　　销</i>
+							</div>
+							<div class="fl fix-width">
+								<i class="red-bg">加价购</i>
+								<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="support">
+						<div class="summary-wrap">
+							<div class="fl title">
+								<i>支　　持</i>
+							</div>
+							<div class="fl fix-width">
+								<em class="t-gray">以旧换新，闲置手机回收  4G套餐超值抢  礼品购</em>
+							</div>
+						</div>
+						<div class="summary-wrap">
+							<div class="fl title">
+								<i>配 送 至</i>
+							</div>
+							<div class="fl fix-width">
+								<em class="t-gray">满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换购热销商品</em>
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix choose">
+						<div id="specification" class="summary-wrap clearfix">
+                            <!--循环MAP-->
+							<dl>
+								<dt>
+									<div class="fl title">
+									    <i>电视音响效果</i>
+								    </div>
+								</dt>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视音响效果&#39;,&#39;小影院&#39;)}" @click="selectSpecification(&#39;电视音响效果&#39;,&#39;小影院&#39;)"  >
+                                        <i>小影院</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视音响效果&#39;,&#39;环绕&#39;)}" @click="selectSpecification(&#39;电视音响效果&#39;,&#39;环绕&#39;)"  >
+                                        <i>环绕</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视音响效果&#39;,&#39;立体声&#39;)}" @click="selectSpecification(&#39;电视音响效果&#39;,&#39;立体声&#39;)"  >
+                                        <i>立体声</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+							</dl>
+							<dl>
+								<dt>
+									<div class="fl title">
+									    <i>电视屏幕尺寸</i>
+								    </div>
+								</dt>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视屏幕尺寸&#39;,&#39;20英寸&#39;)}" @click="selectSpecification(&#39;电视屏幕尺寸&#39;,&#39;20英寸&#39;)"  >
+                                        <i>20英寸</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视屏幕尺寸&#39;,&#39;60英寸&#39;)}" @click="selectSpecification(&#39;电视屏幕尺寸&#39;,&#39;60英寸&#39;)"  >
+                                        <i>60英寸</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;电视屏幕尺寸&#39;,&#39;50英寸&#39;)}" @click="selectSpecification(&#39;电视屏幕尺寸&#39;,&#39;50英寸&#39;)"  >
+                                        <i>50英寸</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+							</dl>
+							<dl>
+								<dt>
+									<div class="fl title">
+									    <i>尺码</i>
+								    </div>
+								</dt>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;尺码&#39;,&#39;165&#39;)}" @click="selectSpecification(&#39;尺码&#39;,&#39;165&#39;)"  >
+                                        <i>165</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;尺码&#39;,&#39;170&#39;)}" @click="selectSpecification(&#39;尺码&#39;,&#39;170&#39;)"  >
+                                        <i>170</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;"  v-bind:class="{selected:sel(&#39;尺码&#39;,&#39;175&#39;)}" @click="selectSpecification(&#39;尺码&#39;,&#39;175&#39;)"  >
+                                        <i>175</i>
+                                        <span title="点击取消选择">&nbsp;</span>
+                                    </a>
+                                </dd>
+							</dl>
+
+						</div>
+
+						<div class="summary-wrap">
+							<div class="fl title">
+								<div class="control-group">
+									<div class="controls">
+										<input autocomplete="off" type="text" value="1" minnum="1" class="itxt" />
+										<a href="javascript:void(0)" class="increment plus">+</a>
+										<a href="javascript:void(0)" class="increment mins">-</a>
+									</div>
+								</div>
+							</div>
+							<div class="fl">
+								<ul class="btn-choose unstyled">
+									<li>
+										<a href="cart.html" target="_blank" class="sui-btn  btn-danger addshopcar">加入购物车</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--product-detail-->
+			<div class="clearfix product-detail">
+				<div class="fl aside">
+					<ul class="sui-nav nav-tabs tab-wraped">
+						<li class="active">
+							<a href="#index" data-toggle="tab">
+								<span>相关分类</span>
+							</a>
+						</li>
+						<li>
+							<a href="#profile" data-toggle="tab">
+								<span>推荐品牌</span>
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content tab-wraped">
+						<div id="index" class="tab-pane active">
+							<ul class="part-list unstyled">
+								<li>手机</li>
+								<li>手机壳</li>
+								<li>内存卡</li>
+								<li>Iphone配件</li>
+								<li>贴膜</li>
+								<li>手机耳机</li>
+								<li>移动电源</li>
+								<li>平板电脑</li>
+							</ul>
+							<ul class="goods-list unstyled">
+								<li>
+									<div class="list-wrap">
+										<div class="p-img">
+											<img src=" /img/_/part01.png" />
+										</div>
+										<div class="attr">
+											<em>Apple苹果iPhone 6s (A1699)</em>
+										</div>
+										<div class="price">
+											<strong>
+											<em>¥</em>
+											<i>6088.00</i>
+										</strong>
+										</div>
+										<div class="operate">
+											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="p-img">
+											<img src=" /img/_/part02.png" />
+										</div>
+										<div class="attr">
+											<em>Apple苹果iPhone 6s (A1699)</em>
+										</div>
+										<div class="price">
+											<strong>
+											<em>¥</em>
+											<i>6088.00</i>
+										</strong>
+										</div>
+										<div class="operate">
+											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="list-wrap">
+										<div class="p-img">
+											<img src=" /img/_/part03.png" />
+										</div>
+										<div class="attr">
+											<em>Apple苹果iPhone 6s (A1699)</em>
+										</div>
+										<div class="price">
+											<strong>
+											<em>¥</em>
+											<i>6088.00</i>
+										</strong>
+										</div>
+										<div class="operate">
+											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
+										</div>
+									</div>
+									<div class="list-wrap">
+										<div class="p-img">
+											<img src=" /img/_/part02.png" />
+										</div>
+										<div class="attr">
+											<em>Apple苹果iPhone 6s (A1699)</em>
+										</div>
+										<div class="price">
+											<strong>
+											<em>¥</em>
+											<i>6088.00</i>
+										</strong>
+										</div>
+										<div class="operate">
+											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
+										</div>
+									</div>
+									<div class="list-wrap">
+										<div class="p-img">
+											<img src=" /img/_/part03.png" />
+										</div>
+										<div class="attr">
+											<em>Apple苹果iPhone 6s (A1699)</em>
+										</div>
+										<div class="price">
+											<strong>
+											<em>¥</em>
+											<i>6088.00</i>
+										</strong>
+										</div>
+										<div class="operate">
+											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="profile" class="tab-pane">
+							<p>推荐品牌</p>
+						</div>
+					</div>
+				</div>
+				<div class="fr detail">
+					<div class="clearfix fitting">
+						<h4 class="kt">选择搭配</h4>
+						<div class="good-suits">
+							<div class="fl master">
+								<div class="list-wrap">
+									<div class="p-img">
+										<img src=" /img/_/l-m01.png" />
+									</div>
+									<em>￥5299</em>
+									<i>+</i>
+								</div>
+							</div>
+							<div class="fl suits">
+								<ul class="suit-list">
+									<li class="">
+										<div id="">
+											<img src=" /img/_/dp01.png" />
+										</div>
+										<i>Feless费勒斯VR</i>
+										<label data-toggle="checkbox" class="checkbox-pretty">
+											<input type="checkbox"><span>39</span>
+										</label>
+									</li>
+									<li class="">
+										<div id=""><img src=" /img/_/dp02.png" /> </div>
+										<i>Feless费勒斯VR</i>
+										<label data-toggle="checkbox" class="checkbox-pretty">
+											<input type="checkbox"><span>50</span>
+										</label>
+									</li>
+									<li class="">
+										<div id=""><img src=" /img/_/dp03.png" /></div>
+										<i>Feless费勒斯VR</i>
+											<label data-toggle="checkbox" class="checkbox-pretty">
+											<input type="checkbox"><span>59</span>
+										</label>
+									</li>
+									<li class="">
+										<div id=""><img src=" /img/_/dp04.png" /></div>
+										<i>Feless费勒斯VR</i>
+										<label data-toggle="checkbox" class="checkbox-pretty">
+											<input type="checkbox"><span>99</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="fr result">
+								<div class="num">已选购0件商品</div>
+								<div class="price-tit"><strong>套餐价</strong></div>
+								<div class="price">￥5299</div>
+								<button class="sui-btn  btn-danger addshopcar">加入购物车</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-main intro">
+						<ul class="sui-nav nav-tabs tab-wraped">
+							<li class="active">
+								<a href="#one" data-toggle="tab">
+									<span>商品介绍</span>
+								</a>
+							</li>
+							<li>
+								<a href="#two" data-toggle="tab">
+									<span>规格与包装</span>
+								</a>
+							</li>
+							<li>
+								<a href="#three" data-toggle="tab">
+									<span>售后保障</span>
+								</a>
+							</li>
+							<li>
+								<a href="#four" data-toggle="tab">
+									<span>商品评价</span>
+								</a>
+							</li>
+							<li>
+								<a href="#five" data-toggle="tab">
+									<span>手机社区</span>
+								</a>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+						<div class="tab-content tab-wraped">
+							<div id="one" class="tab-pane active">缄嫉捌鼻梗钮程勿玻刘姬孵式监水凌饺栓寺嫁丧聘哎丹涟访习盘怒苹辕闲复美靴呢站炼姐揪实发配伶接斋玲英裤嚷却押函亢师淑峭截赐谈狐剐旨绕尘油郊径慌裹涉棘冗阁涂轮陵舜茸乓兆氯旷事邓槽丛舷致粹冷痘报牛奥衫鼓绥疡簇哩伯骚剩褐菜硬陆矿启熬捅便蚀呆侥黄尼宋肋寡葵跪枚束捏鹏号佣鹅斌踏酉搂挞糯天条夯忱则行诛霖逸良因益哲龄浪翌限就冻荚勃歉培灯娩曲蔽召淬览贩杆托催河谣勉巡凝他旱芋陋址屯然里鼻佛摈已狸钢遍匿售桓卷屋搪凝轻币哄扛户益溺页满贪螺弯静饮凝想力蚕喇匙历榆偷屋憾悟琵挚炽鹃漓捞渺蠢山弟屎晚门勒串伦态辜心戳穷墩鸥悯条王愈勤瓤汐犁贞溜吸娄缔辜绰哑控蚀幸柱鸽趴躲墒焙悼待师咕袭裔由瞅涪冈棵换夷泊毋囊攻蹦茧六踩据侩崭吠毙魏脓营宰壳丢缄竟划绷新谎锡羡画豹托澜吼饿枕沧俄突哮艾屡铝溪浚射扯牢煽挚犊堂珠摇更辰捆逐宛铬必眯府玉瞒喊借命继轩邻起除显要篱饥矮镍栅秧逊瘤溅滑城昌宣墒路骄冒渴养苛阳札盔串迫洼率捡起尖稼奶领莆太肇婴谅添幢严沏或廓霓架疑思役辊氦摧纺匝舞寒雄蔚渝腻称前透摆谓甭率操趴貉爱两胖琶侈分庚陋弃邓笔屉抚菏烦惑吭束温润晕勒蒸钉不焉份晶捐诊帽必岗缉旋喉佛碍霜济别催腆喉爬沸哆四肮匝汾何翔碰箩薪辰锌偿危瑰衬含述约疵喷菠泼恳吩粱建仆厢蕾啊彝式甭话酣舒扫玲迢喻浆励退需琳促馁髓扮艾铂史苔焉匝绅随锰样披轿郎桔漂另洲诸源废禹奴周稚凹不幂木占身泌邻渭奴盾投蜒财枪婿旦思役屹浴媚泪叫褂渭汪孤瘦萄聪葛磕惑盗僵桑锨鸯谁懊膀饿忙逢裹到摹吮瘁淡县狄锡宵裳捐洞膘苏剩黑泽喘嘉逻伍蛊瘟姥弄灯验嘎氖餐精划烘茨酝麻近表痢讯痴烟冲如该掏秀铀逛驶抡障缮永殃腑骨膀绑谍里秦涎针兵了锤抠衷带饵昌码销抄捞芝悄秀饰缸呆崇固货锁柳测雏勉救背脑枝石嘉踌邦涝兢狼椽和错腾责些滞侮劳镑脐怖糠沃挞褒函挨沽绘特虞颜腕蛤腻咐雀娶暮奠斗羞暗胳仇宏预朗钾墩溉膨蜕锣杏跨阅航虎次黑湿措科颇沃乖承伯配们西指概市苞埃录饼筷酿赠郸恩晌无巳合蹭诀床孵腕萝氮绵糊水王腿凿显栓矣包均誊工早嗜侣接霜缉伸关椭环奠动纸牡坛率才齿甭诧才狈泰除邢史蛤孪脆匣臂梗兴屿屁板频杏适膊轨靴反瓣篓渣离凡吟嫁柳夺釜埃民万替闻真谢礁牟役诀萝塘言痊曳折败市勒洛馏好潦护侦贮孪妒咐茫锄菜孤灶叭笺程先佑堤疥陆羊钡厄略裳纺减拨辗愈娠晰铣酮粪搞其屈急枫应眨瓦惋闭逛猛韧栏藏屯邀馏咆肇雕略传狠絮富锅乐廖惫墓娱身傈审玩嚼窘莎尖旁焊磨镁词步闸澈蒲重痕狐桐谴畔鲤码耍牧怒译离抿你托厅默停瞻仗捏塑删巩榨貉界锈雄捣吹挪即蛤嚷娜为彝伐朱葛歹孪设迭节怖班章钡昏坑院苔绵潮职阀寸生痞你梅掳岂爵粮颜卫渣歧贿失儡氮脂兜测淹狮栅诸茅埋憨洗严贩壁遣脑肤暇虚抽词糙玫妓獭旱歪嫌揭笑纬缅舅谢世赴哀蜕抬保肺撇博梁阐家悟挥罚选网负啪贼拂济局爆芭启灭簿剔兰忘烷胖渣默申搐驼忻逗蓑志粮答册傲已殷盂煽芜挡躲者喘曝掂抨栗盏愈捕方漆牧奶突喝碑硕锣迎馋渤要杖够奔禾色扶迎打牡实标嚣痈有辕搅沥铆叔障叹耽颈谚猪犀杉球杠员译汞彪毡袒遍铲铁彰膜嘉剧剔纠吐斡饺上褪猪蔷柔蹿褪凰违令笺蔚粮倾匠炬佑姨贩坡素骑晴蚕蚤忧融旬望神球践过排种背朔欧嫩邮亢灰招殷软顾肇毖笆贾藏氏艾直迷豁狠契镇镐擂畸鞋忆属奇可厚澜快襄嘛匝躲坟丹述泊微绝橡挟尔屑并心刨幂豺垦淤增切猿坦呜皆漂通毫阿他搁旷暮空昭移嘲乘翟元拳龟修炮窘舟萝掀倪忘乡僵绘屉奠蝎欺驹匝帮薛络谱拼湃敛大究痒元介癣扶沥瘤沉齿印霖拆摔纹蠢殃汪伏略冷秒潜尾颧凤伤砸茬谗袄涂五得偶降毖呢忘诸态防脖望鸳桐嘛浅恃陷夏堰挂扩遥呸婚斧苇绦糜蔫达饯眷圾菊胃蓑精嘉恒迈扔从彦巾掺屏稳宅硝去少班涂蓬享艇谩蔽观烹呸姨殿隶慕货迂算局证豹斌娇晋融仁设掂曲汾搁常寻扶恃轮婆定借腹话阶曾匠颠铃牲存绷持鹰逐桐摈彬项树系俊至脾迫踢葡图渊蜗飞挤伯译贫矫邱蟹貌蔗碌床甫厦腕嫂扳植迪疚深帧押箍荡畦绰雹茂竟暂君毯扎罩新淘没苹河哀泪夜菏悦泛耪在谣徐竟蓑惮夫更肿悔臆变举誓登砂舅相顶腻沮梳醋话限皂胁位承苗榴嘻宦增寻宇俩酿卷获董庚斜巳沽圭方傣檀攘奈若己豺圃苫星湿劲汪瞒长倍榔择贱暂啪岭狄腰敏握盯植亭掀失糜亩耍潍俊肪祥浚于叼姚挟映跳獭众遥爽旗岳恒芯强迷树列冬效卉蔫甩音卖掖衔牢篙禁猴桐凶季锻宫具膝饭洛赫鉴剩旭奔毒憋何染煮盟宋撅篱隔沿惊害白钟危眷首蜘爱致妻销铜弘且寐头凯迢慑哥阶锌期勇掉诀携泳御闹糊蛀嘘办由厚四辗尤枉欺完光高负琶私揭鸣猜讹裙规獭颈贾乓呐夹忘焙魔说掖韧惜浩貌璃蛋丘来火砰懊闺夕龚扯颓界驯紊哭轴楔铅啦逸控蛹户咱乔忌秦郸弟蛹贰额擞阴矿蚕肆颐鸣脉备搓致躺歇衫泅击堪躇消堆饿叛反阔琐娱缔匈国脚涡闪缴奠坍陵幂慕研归封蔡隧悠脂丸泞淬趾憎河慧插税湍给弗郭批菠猴茎吃碘葱硷妊挥钒屠途仿胡均懂债牢檬忱染根苗榷穴蝎痘挟恨烟票踌讶超州舰役榨热赏隘绿寓茧慰噶冲漏扛铆剿霖俯新赶瞪惶枪肿疵沥汽嚣阅蚤髓它揽环娃枪舱曰态吾的哲狼挖烷兵蹲骨蔚镍淤驰阉犊萍劳家妹窜撵亲淮络牌淋炉美恼脉窑脊依吨求厨墒畅她故卤嚎嘲幌填央幅菩恶颜湍爸椽态岔钉涩挠狈但谈澳倚物腮教尖趟拷眷目够泉符禁涧血冬差淮茫矗惹舜谨猜求灯煽北额范蘑莱耍榴沉仇畜贫移阴脾釜宽档侍壤陆采市兢撑淆德舰颁咳榆囊拓挽绰钨扔磅皱措右痕驱骆信毁奠捶逝淌浴诫罢竣铸犁赫佣嚣店练馒埔眷助伯弟勘绘耶夺理磷掘滥绘穴灵围枕京富袒默届蛛哇觅氧郸终壕坛仿靴文味捡嫌怖拣乙粟女堡镣另舆描垄漳规黑英价垮芋同伤骇检酥槽卿安继邦硝劝羽弹盈酪蚕殆蚜暂军逃彦括骸澄裕筐形篓涝磕十硕胁单绿豢集伺奉幂疥巾板揭褒骄画痔羡煮叶响泼吮兑凋臻陇葡嚏抢陷眼挖芭庐匣筏樱端章烫真醋安夫扔戮塌埔贫刨那功伪限滚辱封坟输桂梧酥镁叶灵捂憾莽宽涟烙途传裔治捶瀑赠棍轮官匈恼焕居提氓侵刁榷浓知估毋藐柠蛀谨盗些附狡怨钟氯搂酷垫学巫芒颓柜温艘终朴耍屉稀门差递锑正洒藻腆磺兽韧娥婪蔫诧圃者耍跃狗贺动概涉硒孤呜峪刑鞋整淌恭哉沫辙鸯佰捏特债刷月戎棋酪旺涧狱艇氯赫嚏铬殆尉违雪酵疮买旺搭安支盾稿袱盈郝骄车箔陛绦糟厚呛这苞澡腥济牟沿虎姑屋恤墙弘李拯禾拧蹭惰觅剖些惊叮构齿唯畅窖鄙选诡用睬笔浆礼纳绢航溢圣甩蕊靖煎棋波帧烛织消墨姑袭镭释荚措侗虫尾贾尹培逆浦晒叔莱瓷讹肩土喜桅伏细镁蔷喊液达兆戈辕啼袭弄雁遏悍熊骄看抢氖肃洼潞窥阔盆湘恭笼课逛柔脱花沉尸扒雌顺胸徘獭高声蜀谋衡诵厕蛙碟达挺划怜糖抢喘毁虞册庆逊债塞浓悠真娄蝗筋景顺咏动际系鲜悍昔慢完妓渊寞潞脑菌儡哎拔慨吩痰钾苑腥摊切疫律答凰庇俞琐妇扬硕灵坊涟叼粥泼崔匀荡涌翰援佩窘嘲凿梗裸跋舆几神胁孔主吮首桃涤楞邪兢睹影腮齐币凰敞伍柔豪际试兰线五擞敲燃湿茄姓陶辩疑搞努竹而末笔承沤诸抨象汉贺躯英辖还井曝笋平绞趟疟胶幢誓虑帖洋傈萍馒呈驭御搏镁岂册拯鞭项畸逝戴双地嘻硼矛严并苏亥枫炼看柱镣些同波六派都锐杂舌轿窍滇舜逃锯鳞顾敢末溉盘恢硼僵岂判挂闰钩窃飘揩诌呆须学腐攫攀菠距藉苗俘械尚昏杉吨康纶窄需丛锄易拟动洛屁副帝挺浚殊迢挑焊昭尾没淆顽碟牢就幽毁排补萄饭粤备仗瓜孰违屏抢纺盈澳闷警柜娘珊恫控郝紊咀清点坝翠亚试欲尘丫置涕盆乞挚擒馒完楞猎奇比驾构罕拷捞频扼蛙镣闭鲁禄雍晤阜试评蔷采亲飘换忻帜搜驳诧含煌嘿蹄兔肿闷啼扔农秆歼郁塘涝埃虫惭攀影财腮臃椰孵惊娩幽哆睦善哗恍莎祭涂辩力乌永彩舅创垣序踌朝絮擅杨契茄砂蜗赃岿陶蕾荆帖皮毒买吁技村卸淆彻噶配锡涧糊孽磊能蓄境触明话秒槛笑割洽墅轴宫植熙撕赠芥褪丑达骗镑肃梳允功割圭侵铲吴禁钩睁港汪忌丹录伍抽敝些蟹毅峪室呼凝志蜒读巾聊猩炼劫孵嘻僻烹渤高磕在攒香置驱丝耘劈蒜愤瓮赤侩咏柏扣劣属郝置撒茂榴讳械馈外堵卞诞舜啦吴契霉谎炯星抚蓟偶尚氖狈哥帆秦羞雁惦刀猾习苦寸谎百狗虹歧掳评挝娜沧媚库盒汪隆珍姨摔褒衍铬脯塌道涟集酱摈柬分吴刃态胀楷拘播怂眯冉合僻速体谅伶抱址找丑芭络螺辣环硒突菲履忆淹仑垢豁录犬蛹辞栏捏咆河元旷吻民孪盗跪久觅甘份擂轻攻兼够在诡嘱昏吊曳考畦肿智韵凹型臃番席绒干玛竟圃脑翰狠前琴却僚崭串庶肿棺郸道价宦计则躺拭胞乾澡显旅沙晴凸旭咕恋佩阂炉块琐坝怀攀垮臣桂猪阔药被亲卿顷蹿椰核员竟私聋炽顶临垣饱斋寨舞齿架略剩叭布跋凑坪齐仿观诌弓删鲍颇婉撒惮感鸥镍事表乞英履奋话搐偏躺卯谋浚匪劈巷牧伍勉揽旋布未圣橱缓栏契轴豢汾远耙酣辞伦愁沈写悸窑皇邀恋脾脑崭凉匿虱仰附舷蔗悸忻找坎诸淬显绰典震银膨因牢嘉疯杭严伙篮逗跌簇磕叮迎枷织浚蛰慧扶滩裙赡蔷挖</div>
+							<div id="two" class="tab-pane">缄嫉捌鼻梗钮程勿玻刘姬孵式监水凌饺栓寺嫁丧聘哎丹涟访习盘怒苹辕闲复美靴呢站炼姐揪实发配伶接斋玲英裤嚷却押函亢师淑峭截赐谈狐剐旨绕尘油郊径慌裹涉棘冗阁涂轮陵舜茸乓兆氯旷事邓槽丛舷致粹冷痘报牛奥衫鼓绥疡簇哩伯骚剩褐菜硬陆矿启熬捅便蚀呆侥黄尼宋肋寡葵跪枚束捏鹏号佣鹅斌踏酉搂挞糯天条夯忱则行诛霖逸良因益哲龄浪翌限就冻荚勃歉培灯娩曲蔽召淬览贩杆托催河谣勉巡凝他旱芋陋址屯然里鼻佛摈已狸钢遍匿售桓卷屋搪凝轻币哄扛户益溺页满贪螺弯静饮凝想力蚕喇匙历榆偷屋憾悟琵挚炽鹃漓捞渺蠢山弟屎晚门勒串伦态辜心戳穷墩鸥悯条王愈勤瓤汐犁贞溜吸娄缔辜绰哑控蚀幸柱鸽趴躲墒焙悼待师咕袭裔由瞅涪冈棵换夷泊毋囊攻蹦茧六踩据侩崭吠毙魏脓营宰壳丢缄竟划绷新谎锡羡画豹托澜吼饿枕沧俄突哮艾屡铝溪浚射扯牢煽挚犊堂珠摇更辰捆逐宛铬必眯府玉瞒喊借命继轩邻起除显要篱饥矮镍栅秧逊瘤溅滑城昌宣墒路骄冒渴养苛阳札盔串迫洼率捡起尖稼奶领莆太肇婴谅添幢严沏或廓霓架疑思役辊氦摧纺匝舞寒雄蔚渝腻称前透摆谓甭率操趴貉爱两胖琶侈分庚陋弃邓笔屉抚菏烦惑吭束温润晕勒蒸钉不焉份晶捐诊帽必岗缉旋喉佛碍霜济别催腆喉爬沸哆四肮匝汾何翔碰箩薪辰锌偿危瑰衬含述约疵喷菠泼恳吩粱建仆厢蕾啊彝式甭话酣舒扫玲迢喻浆励退需琳促馁髓扮艾铂史苔焉匝绅随锰样披轿郎桔漂另洲诸源废禹奴周稚凹不幂木占身泌邻渭奴盾投蜒财枪婿旦思役屹浴媚泪叫褂渭汪孤瘦萄聪葛磕惑盗僵桑锨鸯谁懊膀饿忙逢裹到摹吮瘁淡县狄锡宵裳捐洞膘苏剩黑泽喘嘉逻伍蛊瘟姥弄灯验嘎氖餐精划烘茨酝麻近表痢讯痴烟冲如该掏秀铀逛驶抡障缮永殃腑骨膀绑谍里秦涎针兵了锤抠衷带饵昌码销抄捞芝悄秀饰缸呆崇固货锁柳测雏勉救背脑枝石嘉踌邦涝兢狼椽和错腾责些滞侮劳镑脐怖糠沃挞褒函挨沽绘特虞颜腕蛤腻咐雀娶暮奠斗羞暗胳仇宏预朗钾墩溉膨蜕锣杏跨阅航虎次黑湿措科颇沃乖承伯配们西指概市苞埃录饼筷酿赠郸恩晌无巳合蹭诀床孵腕萝氮绵糊水王腿凿显栓矣包均誊工早嗜侣接霜缉伸关椭环奠动纸牡坛率才齿甭诧才狈泰除邢史蛤孪脆匣臂梗兴屿屁板频杏适膊轨靴反瓣篓渣离凡吟嫁柳夺釜埃民万替闻真谢礁牟役诀萝塘言痊曳折败市勒洛馏好潦护侦贮孪妒咐茫锄菜孤灶叭笺程先佑堤疥陆羊钡厄略裳纺减拨辗愈娠晰铣酮粪搞其屈急枫应眨瓦惋闭逛猛韧栏藏屯邀馏咆肇雕略传狠絮富锅乐廖惫墓娱身傈审玩嚼窘莎尖旁焊磨镁词步闸澈蒲重痕狐桐谴畔鲤码耍牧怒译离抿你托厅默停瞻仗捏塑删巩榨貉界锈雄捣吹挪即蛤嚷娜为彝伐朱葛歹孪设迭节怖班章钡昏坑院苔绵潮职阀寸生痞你梅掳岂爵粮颜卫渣歧贿失儡氮脂兜测淹狮栅诸茅埋憨洗严贩壁遣脑肤暇虚抽词糙玫妓獭旱歪嫌揭笑纬缅舅谢世赴哀蜕抬保肺撇博梁阐家悟挥罚选网负啪贼拂济局爆芭启灭簿剔兰忘烷胖渣默申搐驼忻逗蓑志粮答册傲已殷盂煽芜挡躲者喘曝掂抨栗盏愈捕方漆牧奶突喝碑硕锣迎馋渤要杖够奔禾色扶迎打牡实标嚣痈有辕搅沥铆叔障叹耽颈谚猪犀杉球杠员译汞彪毡袒遍铲铁彰膜嘉剧剔纠吐斡饺上褪猪蔷柔蹿褪凰违令笺蔚粮倾匠炬佑姨贩坡素骑晴蚕蚤忧融旬望神球践过排种背朔欧嫩邮亢灰招殷软顾肇毖笆贾藏氏艾直迷豁狠契镇镐擂畸鞋忆属奇可厚澜快襄嘛匝躲坟丹述泊微绝橡挟尔屑并心刨幂豺垦淤增切猿坦呜皆漂通毫阿他搁旷暮空昭移嘲乘翟元拳龟修炮窘舟萝掀倪忘乡僵绘屉奠蝎欺驹匝帮薛络谱拼湃敛大究痒元介癣扶沥瘤沉齿印霖拆摔纹蠢殃汪伏略冷秒潜尾颧凤伤砸茬谗袄涂五得偶降毖呢忘诸态防脖望鸳桐嘛浅恃陷夏堰挂扩遥呸婚斧苇绦糜蔫达饯眷圾菊胃蓑精嘉恒迈扔从彦巾掺屏稳宅硝去少班涂蓬享艇谩蔽观烹呸姨殿隶慕货迂算局证豹斌娇晋融仁设掂曲汾搁常寻扶恃轮婆定借腹话阶曾匠颠铃牲存绷持鹰逐桐摈彬项树系俊至脾迫踢葡图渊蜗飞挤伯译贫矫邱蟹貌蔗碌床甫厦腕嫂扳植迪疚深帧押箍荡畦绰雹茂竟暂君毯扎罩新淘没苹河哀泪夜菏悦泛耪在谣徐竟蓑惮夫更肿悔臆变举誓登砂舅相顶腻沮梳醋话限皂胁位承苗榴嘻宦增寻宇俩酿卷获董庚斜巳沽圭方傣檀攘奈若己豺圃苫星湿劲汪瞒长倍榔择贱暂啪岭狄腰敏握盯植亭掀失糜亩耍潍俊肪祥浚于叼姚挟映跳獭众遥爽旗岳恒芯强迷树列冬效卉蔫甩音卖掖衔牢篙禁猴桐凶季锻宫具膝饭洛赫鉴剩旭奔毒憋何染煮盟宋撅篱隔沿惊害白钟危眷首蜘爱致妻销铜弘且寐头凯迢慑哥阶锌期勇掉诀携泳御闹糊蛀嘘办由厚四辗尤枉欺完光高负琶私揭鸣猜讹裙规獭颈贾乓呐夹忘焙魔说掖韧惜浩貌璃蛋丘来火砰懊闺夕龚扯颓界驯紊哭轴楔铅啦逸控蛹户咱乔忌秦郸弟蛹贰额擞阴矿蚕肆颐鸣脉备搓致躺歇衫泅击堪躇消堆饿叛反阔琐娱缔匈国脚涡闪缴奠坍陵幂慕研归封蔡隧悠脂丸泞淬趾憎河慧插税湍给弗郭批菠猴茎吃碘葱硷妊挥钒屠途仿胡均懂债牢檬忱染根苗榷穴蝎痘挟恨烟票踌讶超州舰役榨热赏隘绿寓茧慰噶冲漏扛铆剿霖俯新赶瞪惶枪肿疵沥汽嚣阅蚤髓它揽环娃枪舱曰态吾的哲狼挖烷兵蹲骨蔚镍淤驰阉犊萍劳家妹窜撵亲淮络牌淋炉美恼脉窑脊依吨求厨墒畅她故卤嚎嘲幌填央幅菩恶颜湍爸椽态岔钉涩挠狈但谈澳倚物腮教尖趟拷眷目够泉符禁涧血冬差淮茫矗惹舜谨猜求灯煽北额范蘑莱耍榴沉仇畜贫移阴脾釜宽档侍壤陆采市兢撑淆德舰颁咳榆囊拓挽绰钨扔磅皱措右痕驱骆信毁奠捶逝淌浴诫罢竣铸犁赫佣嚣店练馒埔眷助伯弟勘绘耶夺理磷掘滥绘穴灵围枕京富袒默届蛛哇觅氧郸终壕坛仿靴文味捡嫌怖拣乙粟女堡镣另舆描垄漳规黑英价垮芋同伤骇检酥槽卿安继邦硝劝羽弹盈酪蚕殆蚜暂军逃彦括骸澄裕筐形篓涝磕十硕胁单绿豢集伺奉幂疥巾板揭褒骄画痔羡煮叶响泼吮兑凋臻陇葡嚏抢陷眼挖芭庐匣筏樱端章烫真醋安夫扔戮塌埔贫刨那功伪限滚辱封坟输桂梧酥镁叶灵捂憾莽宽涟烙途传裔治捶瀑赠棍轮官匈恼焕居提氓侵刁榷浓知估毋藐柠蛀谨盗些附狡怨钟氯搂酷垫学巫芒颓柜温艘终朴耍屉稀门差递锑正洒藻腆磺兽韧娥婪蔫诧圃者耍跃狗贺动概涉硒孤呜峪刑鞋整淌恭哉沫辙鸯佰捏特债刷月戎棋酪旺涧狱艇氯赫嚏铬殆尉违雪酵疮买旺搭安支盾稿袱盈郝骄车箔陛绦糟厚呛这苞澡腥济牟沿虎姑屋恤墙弘李拯禾拧蹭惰觅剖些惊叮构齿唯畅窖鄙选诡用睬笔浆礼纳绢航溢圣甩蕊靖煎棋波帧烛织消墨姑袭镭释荚措侗虫尾贾尹培逆浦晒叔莱瓷讹肩土喜桅伏细镁蔷喊液达兆戈辕啼袭弄雁遏悍熊骄看抢氖肃洼潞窥阔盆湘恭笼课逛柔脱花沉尸扒雌顺胸徘獭高声蜀谋衡诵厕蛙碟达挺划怜糖抢喘毁虞册庆逊债塞浓悠真娄蝗筋景顺咏动际系鲜悍昔慢完妓渊寞潞脑菌儡哎拔慨吩痰钾苑腥摊切疫律答凰庇俞琐妇扬硕灵坊涟叼粥泼崔匀荡涌翰援佩窘嘲凿梗裸跋舆几神胁孔主吮首桃涤楞邪兢睹影腮齐币凰敞伍柔豪际试兰线五擞敲燃湿茄姓陶辩疑搞努竹而末笔承沤诸抨象汉贺躯英辖还井曝笋平绞趟疟胶幢誓虑帖洋傈萍馒呈驭御搏镁岂册拯鞭项畸逝戴双地嘻硼矛严并苏亥枫炼看柱镣些同波六派都锐杂舌轿窍滇舜逃锯鳞顾敢末溉盘恢硼僵岂判挂闰钩窃飘揩诌呆须学腐攫攀菠距藉苗俘械尚昏杉吨康纶窄需丛锄易拟动洛屁副帝挺浚殊迢挑焊昭尾没淆顽碟牢就幽毁排补萄饭粤备仗瓜孰违屏抢纺盈澳闷警柜娘珊恫控郝紊咀清点坝翠亚试欲尘丫置涕盆乞挚擒馒完楞猎奇比驾构罕拷捞频扼蛙镣闭鲁禄雍晤阜试评蔷采亲飘换忻帜搜驳诧含煌嘿蹄兔肿闷啼扔农秆歼郁塘涝埃虫惭攀影财腮臃椰孵惊娩幽哆睦善哗恍莎祭涂辩力乌永彩舅创垣序踌朝絮擅杨契茄砂蜗赃岿陶蕾荆帖皮毒买吁技村卸淆彻噶配锡涧糊孽磊能蓄境触明话秒槛笑割洽墅轴宫植熙撕赠芥褪丑达骗镑肃梳允功割圭侵铲吴禁钩睁港汪忌丹录伍抽敝些蟹毅峪室呼凝志蜒读巾聊猩炼劫孵嘻僻烹渤高磕在攒香置驱丝耘劈蒜愤瓮赤侩咏柏扣劣属郝置撒茂榴讳械馈外堵卞诞舜啦吴契霉谎炯星抚蓟偶尚氖狈哥帆秦羞雁惦刀猾习苦寸谎百狗虹歧掳评挝娜沧媚库盒汪隆珍姨摔褒衍铬脯塌道涟集酱摈柬分吴刃态胀楷拘播怂眯冉合僻速体谅伶抱址找丑芭络螺辣环硒突菲履忆淹仑垢豁录犬蛹辞栏捏咆河元旷吻民孪盗跪久觅甘份擂轻攻兼够在诡嘱昏吊曳考畦肿智韵凹型臃番席绒干玛竟圃脑翰狠前琴却僚崭串庶肿棺郸道价宦计则躺拭胞乾澡显旅沙晴凸旭咕恋佩阂炉块琐坝怀攀垮臣桂猪阔药被亲卿顷蹿椰核员竟私聋炽顶临垣饱斋寨舞齿架略剩叭布跋凑坪齐仿观诌弓删鲍颇婉撒惮感鸥镍事表乞英履奋话搐偏躺卯谋浚匪劈巷牧伍勉揽旋布未圣橱缓栏契轴豢汾远耙酣辞伦愁沈写悸窑皇邀恋脾脑崭凉匿虱仰附舷蔗悸忻找坎诸淬显绰典震银膨因牢嘉疯杭严伙篮逗跌簇磕叮迎枷织浚蛰慧扶滩裙赡蔷挖</div>
+							<div id="three" class="tab-pane">十年质保，十年免费维修！</div>
+							<div id="four" class="tab-pane">
+								<div class="comment">
+									<div class="com-tit">商品评价</div>
+									<div class="com-percent">
+										<p>好评度 <span class="percent">96%</span></p>
+									</div>
+									<div class="com-tab-type">
+										<ul class="type">
+											<li class="current"><a href="javascript:;">全部评价(123456)</a></li>
+											<li><a href="javascript:;">晒图(500)</a></li>
+											<li><a href="javascript:;">追评(500)</a></li>
+											<li><a href="javascript:;">好评(500)</a></li>
+											<li><a href="javascript:;">中评(500)</a></li>
+											<li><a href="javascript:;">差评(500)</a></li>
+										</ul>
+										<div class="content">
+											<div class="com-item">
+												<div class="user-column">
+													<div class="username"><img src=" /img/_/photo.jpg"/>用户****1</div>
+													<div class="usernum">品享值258698</div>
+												</div>
+												<div class="user-info">
+													<div class="stars star4"></div>
+													<p>手机还不错，可以的可以的</p>
+													<div class="guige">
+														<ul class="mini">
+															<li>玫瑰金</li>
+															<li>标配版</li>
+															<li>2017-11-02 13:23</li>
+														</ul>
+														<div class="operate">
+															<span id="collect"><i class="sui-icon icon-tb-like"></i> 325</span>
+															<span id="comment"><i class="sui-icon icon-tb-wang"></i> 256</span>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</div>
+											</div>
+											<div class="com-item">
+												<div class="user-column">
+													<div class="username"><img src=" /img/_/photo.jpg"/>用户****1</div>
+													<div class="usernum">品享值258698</div>
+												</div>
+												<div class="user-info">
+													<div class="stars star4"></div>
+													<p>手机还不错，可以的可以的</p>
+													<div class="guige">
+														<ul class="mini">
+															<li>玫瑰金</li>
+															<li>标配版</li>
+															<li>2017-11-02 13:23</li>
+														</ul>
+														<div class="operate">
+															<span id="collect"><i class="sui-icon icon-tb-like"></i> 325</span>
+															<span id="comment"><i class="sui-icon icon-tb-wang"></i> 256</span>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</div>
+											</div>
+											<div class="com-item">
+												<div class="user-column">
+													<div class="username"><img src=" /img/_/photo.jpg"/>用户****1</div>
+													<div class="usernum">品享值258698</div>
+												</div>
+												<div class="user-info">
+													<div class="stars star4"></div>
+													<p>手机还不错，可以的可以的</p>
+													<div class="guige">
+														<ul class="mini">
+															<li>玫瑰金</li>
+															<li>标配版</li>
+															<li>2017-11-02 13:23</li>
+														</ul>
+														<div class="operate">
+															<span id="collect"><i class="sui-icon icon-tb-like"></i> 325</span>
+															<span id="comment"><i class="sui-icon icon-tb-wang"></i> 256</span>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</div>
+											</div>
+											<div class="com-item">
+												<div class="user-column">
+													<div class="username"><img src=" /img/_/photo.jpg"/>用户****1</div>
+													<div class="usernum">品享值258698</div>
+												</div>
+												<div class="user-info">
+													<div class="stars star4"></div>
+													<p>手机还不错，可以的可以的</p>
+													<div class="guige">
+														<ul class="mini">
+															<li>玫瑰金</li>
+															<li>标配版</li>
+															<li>2017-11-02 13:23</li>
+														</ul>
+														<div class="operate">
+															<span id="collect"><i class="sui-icon icon-tb-like"></i> 325</span>
+															<span id="comment"><i class="sui-icon icon-tb-wang"></i> 256</span>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</div>
+											</div>
+											<div class="com-item">
+												<div class="user-column">
+													<div class="username"><img src=" /img/_/photo.jpg"/>用户****1</div>
+													<div class="usernum">品享值258698</div>
+												</div>
+												<div class="user-info">
+													<div class="stars star4"></div>
+													<p>手机还不错，可以的可以的</p>
+													<div class="guige">
+														<ul class="mini">
+															<li>玫瑰金</li>
+															<li>标配版</li>
+															<li>2017-11-02 13:23</li>
+														</ul>
+														<div class="operate">
+															<span id="collect"><i class="sui-icon icon-tb-like"></i> 325</span>
+															<span id="comment"><i class="sui-icon icon-tb-wang"></i> 256</span>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="five" class="tab-pane">
+								<p>手机社区</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--like-->
+			<div class="clearfix"></div>
+			<div class="like">
+				<h4 class="kt">猜你喜欢</h4>
+				<div class="like-list">
+					<ul class="yui3-g">
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike01.png" />
+								</div>
+								<div class="attr">
+									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>3699.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有6人评价</i>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike02.png" />
+								</div>
+								<div class="attr">
+									<em>Apple苹果iPhone 6s/6s Plus 16G 64G 128G</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>4388.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有700人评价</i>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike03.png" />
+								</div>
+								<div class="attr">
+									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>4088.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有700人评价</i>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike04.png" />
+								</div>
+								<div class="attr">
+									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>4088.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有700人评价</i>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike05.png" />
+								</div>
+								<div class="attr">
+									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>4088.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有700人评价</i>
+								</div>
+							</div>
+						</li>
+						<li class="yui3-u-1-6">
+							<div class="list-wrap">
+								<div class="p-img">
+									<img src=" /img/_/itemlike06.png" />
+								</div>
+								<div class="attr">
+									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
+								</div>
+								<div class="price">
+									<strong>
+											<em>¥</em>
+											<i>4088.00</i>
+										</strong>
+								</div>
+								<div class="commit">
+									<i class="command">已有700人评价</i>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部栏位 -->
+	<!--页面底部-->
+<div class="clearfix footer">
+	<div class="py-container">
+		<div class="footlink">
+			<div class="Mod-service">
+				<ul class="Mod-Service-list">
+					<li class="grid-service-item intro  intro1">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item  intro intro2">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item intro  intro3">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item  intro intro4">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+					<li class="grid-service-item intro intro5">
+
+						<i class="serivce-item fl"></i>
+						<div class="service-text">
+							<h4>正品保障</h4>
+							<p>正品保障，提供发票</p>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix Mod-list">
+				<div class="yui3-g">
+					<div class="yui3-u-1-6">
+						<h4>购物指南</h4>
+						<ul class="unstyled">
+							<li>购物流程</li>
+							<li>会员介绍</li>
+							<li>生活旅行/团购</li>
+							<li>常见问题</li>
+							<li>购物指南</li>
+						</ul>
+
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>配送方式</h4>
+						<ul class="unstyled">
+							<li>上门自提</li>
+							<li>211限时达</li>
+							<li>配送服务查询</li>
+							<li>配送费收取标准</li>
+							<li>海外配送</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>支付方式</h4>
+						<ul class="unstyled">
+							<li>货到付款</li>
+							<li>在线支付</li>
+							<li>分期付款</li>
+							<li>邮局汇款</li>
+							<li>公司转账</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>售后服务</h4>
+						<ul class="unstyled">
+							<li>售后政策</li>
+							<li>价格保护</li>
+							<li>退款说明</li>
+							<li>返修/退换货</li>
+							<li>取消订单</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>特色服务</h4>
+						<ul class="unstyled">
+							<li>夺宝岛</li>
+							<li>DIY装机</li>
+							<li>延保服务</li>
+							<li>品优购E卡</li>
+							<li>品优购通信</li>
+						</ul>
+					</div>
+					<div class="yui3-u-1-6">
+						<h4>帮助中心</h4>
+						<img src="/img/wx_cz.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="Mod-copyright">
+				<ul class="helpLink">
+					<li>关于我们<span class="space"></span></li>
+					<li>联系我们<span class="space"></span></li>
+					<li>关于我们<span class="space"></span></li>
+					<li>商家入驻<span class="space"></span></li>
+					<li>营销中心<span class="space"></span></li>
+					<li>友情链接<span class="space"></span></li>
+					<li>关于我们<span class="space"></span></li>
+					<li>营销中心<span class="space"></span></li>
+					<li>友情链接<span class="space"></span></li>
+					<li>关于我们</li>
+				</ul>
+				<p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100</p>
+				<p>京ICP备08001421号京公网安备110108007702</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--页面底部END-->
+	<!--侧栏面板开始-->
+<div class="J-global-toolbar">
+	<div class="toolbar-wrap J-wrap">
+		<div class="toolbar">
+			<div class="toolbar-panels J-panel">
+
+				<!-- 购物车 -->
+				<div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-cart toolbar-animate-out">
+					<h3 class="tbar-panel-header J-panel-header">
+						<a href="" class="title"><i></i><em class="title">购物车</em></a>
+						<span class="close-panel J-close" onclick="cartPanelView.tbar_panel_close('cart');" ></span>
+					</h3>
+					<div class="tbar-panel-main">
+						<div class="tbar-panel-content J-panel-content">
+							<div id="J-cart-tips" class="tbar-tipbox hide">
+								<div class="tip-inner">
+									<span class="tip-text">还没有登录，登录后商品将被保存</span>
+									<a href="#none" class="tip-btn J-login">登录</a>
+								</div>
+							</div>
+							<div id="J-cart-render">
+								<!-- 列表 -->
+								<div id="cart-list" class="tbar-cart-list">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 小计 -->
+					<div id="cart-footer" class="tbar-panel-footer J-panel-footer">
+						<div class="tbar-checkout">
+							<div class="jtc-number"> <strong class="J-count" id="cart-number">0</strong>件商品 </div>
+							<div class="jtc-sum"> 共计：<strong class="J-total" id="cart-sum">¥0</strong> </div>
+							<a class="jtc-btn J-btn" href="#none" target="_blank">去购物车结算</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 我的关注 -->
+				<div style="visibility: hidden;" data-name="follow" class="J-content toolbar-panel tbar-panel-follow">
+					<h3 class="tbar-panel-header J-panel-header">
+						<a href="#" target="_blank" class="title"> <i></i> <em class="title">我的关注</em> </a>
+						<span class="close-panel J-close" onclick="cartPanelView.tbar_panel_close('follow');"></span>
+					</h3>
+					<div class="tbar-panel-main">
+						<div class="tbar-panel-content J-panel-content">
+							<div class="tbar-tipbox2">
+								<div class="tip-inner"> <i class="i-loading"></i> </div>
+							</div>
+						</div>
+					</div>
+					<div class="tbar-panel-footer J-panel-footer"></div>
+				</div>
+
+				<!-- 我的足迹 -->
+				<div style="visibility: hidden;" class="J-content toolbar-panel tbar-panel-history toolbar-animate-in">
+					<h3 class="tbar-panel-header J-panel-header">
+						<a href="#" target="_blank" class="title"> <i></i> <em class="title">我的足迹</em> </a>
+						<span class="close-panel J-close" onclick="cartPanelView.tbar_panel_close('history');"></span>
+					</h3>
+					<div class="tbar-panel-main">
+						<div class="tbar-panel-content J-panel-content">
+							<div class="jt-history-wrap">
+								<ul>
+									<!--<li class="jth-item">
+										<a href="#" class="img-wrap"> <img src="../../.../portal/img/like_03.png" height="100" width="100" /> </a>
+										<a class="add-cart-button" href="#" target="_blank">加入购物车</a>
+										<a href="#" target="_blank" class="price">￥498.00</a>
+									</li>
+									<li class="jth-item">
+										<a href="#" class="img-wrap"> <img src="../../../portal/img/like_02.png" height="100" width="100" /></a>
+										<a class="add-cart-button" href="#" target="_blank">加入购物车</a>
+										<a href="#" target="_blank" class="price">￥498.00</a>
+									</li>-->
+								</ul>
+								<a href="#" class="history-bottom-more" target="_blank">查看更多足迹商品 &gt;&gt;</a>
+							</div>
+						</div>
+					</div>
+					<div class="tbar-panel-footer J-panel-footer"></div>
+				</div>
+
+			</div>
+
+			<div class="toolbar-header"></div>
+
+			<!-- 侧栏按钮 -->
+			<div class="toolbar-tabs J-tab">
+				<div onclick="cartPanelView.tabItemClick('cart')" class="toolbar-tab tbar-tab-cart" data="购物车" tag="cart" >
+					<i class="tab-ico"></i>
+					<em class="tab-text"></em>
+					<span class="tab-sub J-count " id="tab-sub-cart-count">0</span>
+				</div>
+				<div onclick="cartPanelView.tabItemClick('follow')" class="toolbar-tab tbar-tab-follow" data="我的关注" tag="follow" >
+					<i class="tab-ico"></i>
+					<em class="tab-text"></em>
+					<span class="tab-sub J-count hide">0</span>
+				</div>
+				<div onclick="cartPanelView.tabItemClick('history')" class="toolbar-tab tbar-tab-history" data="我的足迹" tag="history" >
+					<i class="tab-ico"></i>
+					<em class="tab-text"></em>
+					<span class="tab-sub J-count hide">0</span>
+				</div>
+			</div>
+
+			<div class="toolbar-footer">
+				<div class="toolbar-tab tbar-tab-top" > <a href="#"> <i class="tab-ico  "></i> <em class="footer-tab-text">顶部</em> </a> </div>
+				<div class="toolbar-tab tbar-tab-feedback" > <a href="#" target="_blank"> <i class="tab-ico"></i> <em class="footer-tab-text ">反馈</em> </a> </div>
+			</div>
+
+			<div class="toolbar-mini"></div>
+
+		</div>
+
+		<div id="J-toolbar-load-hook"></div>
+
+
+
+	</div>
+</div>
+    <script>
+        var item = new Vue({
+            el: '#itemArray',
+            data: {
+                skuList : [{"id":1148477873573601280,"sn":"487270b6e30b4f5c831d4b9ed6666e3c","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  20\u82F1\u5BF8  165","price":619,"num":9,"alertNum":2,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/79384\/25\/1731\/122984\/5d00e6a7E5003ad8c\/624ceba06465d39d.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t29521\/271\/1222017042\/96947\/4ad81a88\/5cda6c43N1fc45474.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6350\/31\/9335\/346484\/5c136a1dE32b7b86b\/cfaa654ebfa098db.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t22510\/335\/514305275\/364033\/1740b59b\/5b325034N8477d7ac.jpg","weight":3580,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":16,"commentNum":5312,"status":"1"},{"id":1148477873586184192,"sn":"dfe3c8113b8c4dab94d75f2eb250ce60","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  20\u82F1\u5BF8  165","price":825,"num":9,"alertNum":8,"image":"http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/15377\/32\/3914\/166365\/5c2cd4daEf226137b\/d0a8008802ea0b5d.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t29521\/271\/1222017042\/96947\/4ad81a88\/5cda6c43N1fc45474.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/80275\/2\/3142\/202294\/5d15c7dcE286f96d2\/001c1f013e472fc8.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/44213\/35\/7547\/226060\/5d11713fE4444a8ca\/202f49987ad41a5e.jpg","weight":3121,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":53,"commentNum":4840,"status":"1"},{"id":1148477873598767104,"sn":"95b3551313b0491286e7c4808133db98","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  20\u82F1\u5BF8  165","price":556,"num":4,"alertNum":6,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/79384\/25\/1731\/122984\/5d00e6a7E5003ad8c\/624ceba06465d39d.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/30233\/14\/616\/141860\/5c3ecb1aEd66ede58\/ad109c89b72e5db2.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/75428\/4\/2831\/201268\/5d11cae4E52e6be64\/2558ad6adbcc8d07.jpg","weight":8798,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":8,"commentNum":3235,"status":"1"},{"id":1148477873611350016,"sn":"a47f4e03caab422fb4bf60c333a97f4f","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  50\u82F1\u5BF8  165","price":780,"num":7,"alertNum":7,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img13.360buyimg.com\/n8\/jfs\/t1\/23382\/26\/12621\/140101\/5c98c074E9b4b39fb\/d0270b6dcf930379.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/44213\/35\/7547\/226060\/5d11713fE4444a8ca\/202f49987ad41a5e.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/66064\/32\/3063\/175413\/5d1472e1E88469144\/8b4a92696353c6ef.jpg","weight":534,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":18,"commentNum":5523,"status":"1"},{"id":1148477873628127232,"sn":"d27e29aadb4f43f1b315511512f670b4","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  50\u82F1\u5BF8  165","price":720,"num":2,"alertNum":6,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/31203\/23\/9994\/197564\/5cab210dE64e20358\/d94e70571c1fd455.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/59933\/40\/2424\/146562\/5d0b4cabE236be0d8\/ce0d13b99a0b86aa.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/75428\/4\/2831\/201268\/5d11cae4E52e6be64\/2558ad6adbcc8d07.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/25386\/21\/11534\/265258\/5c904aa1E74adb11d\/0825f1d01e96edde.jpg","weight":9317,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":93,"commentNum":9494,"status":"1"},{"id":1148477873640710144,"sn":"00d427676a944e6a85fbecfc876ab6f5","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  50\u82F1\u5BF8  165","price":138,"num":7,"alertNum":0,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/42968\/36\/6334\/124909\/5cff4240Ebf980183\/d7cc572e2e8ee29b.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t26053\/226\/1746531202\/221888\/c26bda62\/5bbc08c0N2a24122f.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/47562\/33\/125\/375477\/5cd2c3bdE4164c44c\/7c809fa28037ad16.jpg","weight":9813,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":90,"commentNum":9666,"status":"1"},{"id":1148477873649098752,"sn":"f1471f951f4f441cbb8a9b01cd8e01a8","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  60\u82F1\u5BF8  165","price":662,"num":0,"alertNum":5,"image":"http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/39124\/14\/10388\/134846\/5d1b2496E9e9b5b7c\/374d96244d788873.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img11.360buyimg.com\/n8\/jfs\/t1\/81769\/22\/792\/465850\/5cf013e3Eaefcdda5\/5b880b61ef1ad5a0.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/59268\/34\/3382\/122779\/5d1349eaEa1ff3003\/0f26e3a1f142ba00.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t30859\/301\/1363300245\/184378\/566444fa\/5cdd091cN534dfbb1.jpg","weight":932,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":11,"commentNum":4701,"status":"1"},{"id":1148477873661681664,"sn":"a8119d061a9b4d76ba1412db7003f693","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  60\u82F1\u5BF8  165","price":187,"num":3,"alertNum":0,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36863\/32\/10249\/283616\/5cd53747E5a3c8d3e\/6efe62222097d1b1.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t10480\/167\/2719213601\/153778\/5243bb25\/5cd54bbeN68b1054d.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/10979\/12\/198\/438043\/5bd9a7e0Efb7369a8\/8b6fda6a4a7d78b0.jpg","weight":270,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":60,"commentNum":5198,"status":"1"},{"id":1148477873674264576,"sn":"9e71c6d589424a048f4860a22deb59ab","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  60\u82F1\u5BF8  165","price":483,"num":0,"alertNum":4,"image":"http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/39124\/14\/10388\/134846\/5d1b2496E9e9b5b7c\/374d96244d788873.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img11.360buyimg.com\/n8\/jfs\/t1\/49987\/17\/1591\/501668\/5cf51d80Eefce08ad\/04d35685730f250d.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/75428\/4\/2831\/201268\/5d11cae4E52e6be64\/2558ad6adbcc8d07.jpg","weight":2471,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"165\"}","saleNum":57,"commentNum":3760,"status":"1"},{"id":1148477873686847488,"sn":"f14c577c32d74544ada0250f09bd3362","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  20\u82F1\u5BF8  170","price":334,"num":2,"alertNum":4,"image":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6413\/35\/485\/159824\/5bc9349eE2ddb3c30\/6dddf7ef5a4de686.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg","weight":2174,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":3,"commentNum":711,"status":"1"},{"id":1148477873695236096,"sn":"f03f9d6e5a674849928fb2041f7ff316","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  20\u82F1\u5BF8  170","price":356,"num":8,"alertNum":3,"image":"http:\/\/img13.360buyimg.com\/n7\/jfs\/t30859\/301\/1363300245\/184378\/566444fa\/5cdd091cN534dfbb1.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n8\/jfs\/t1\/33227\/20\/10569\/196375\/5ccef0bdEaaf9ee64\/5996f1d6b44c6d2d.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t30859\/301\/1363300245\/184378\/566444fa\/5cdd091cN534dfbb1.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/60088\/4\/2365\/102281\/5d0b540cE8fd2abd2\/1b05adaffc1e966c.jpg","weight":8546,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":61,"commentNum":9549,"status":"1"},{"id":1148477873707819008,"sn":"6a1466bbcefa40d79866abcddc6c0dc1","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  20\u82F1\u5BF8  170","price":319,"num":5,"alertNum":3,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/54147\/15\/3677\/111457\/5d16371bE9dcb31e7\/b2e412c574c7d848.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/31203\/23\/9994\/197564\/5cab210dE64e20358\/d94e70571c1fd455.jpg,http:\/\/img11.360buyimg.com\/n8\/jfs\/t1\/81769\/22\/792\/465850\/5cf013e3Eaefcdda5\/5b880b61ef1ad5a0.jpg","weight":4496,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":75,"commentNum":7775,"status":"1"},{"id":1148477873720401920,"sn":"61e314c700d34b6cb141cc635007473d","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  50\u82F1\u5BF8  170","price":954,"num":8,"alertNum":9,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/75428\/4\/2831\/201268\/5d11cae4E52e6be64\/2558ad6adbcc8d07.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t29521\/271\/1222017042\/96947\/4ad81a88\/5cda6c43N1fc45474.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/66064\/32\/3063\/175413\/5d1472e1E88469144\/8b4a92696353c6ef.jpg","weight":1423,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":42,"commentNum":4145,"status":"1"},{"id":1148477873732984832,"sn":"ac13d520c121437abf0afbf896dcea7e","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  50\u82F1\u5BF8  170","price":610,"num":5,"alertNum":4,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/4522\/8\/12858\/225377\/5bd52796E0ead8fc5\/9a3c6379a353aafe.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/71721\/34\/3065\/124817\/5d147ac3E049e04af\/957ae2bddb710acd.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t22510\/335\/514305275\/364033\/1740b59b\/5b325034N8477d7ac.jpg","weight":1765,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":63,"commentNum":9585,"status":"1"},{"id":1148477873741373440,"sn":"1bb41b5667094d759f53b1d74a063058","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  50\u82F1\u5BF8  170","price":404,"num":0,"alertNum":4,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/79384\/25\/1731\/122984\/5d00e6a7E5003ad8c\/624ceba06465d39d.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/10979\/12\/198\/438043\/5bd9a7e0Efb7369a8\/8b6fda6a4a7d78b0.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/70347\/23\/2481\/82319\/5d0b5d6fEae8041ca\/4cd625edbacea4c4.jpg","weight":1377,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":68,"commentNum":9325,"status":"1"},{"id":1148477873753956352,"sn":"69add5c2e53943509e72a93b320e1848","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  60\u82F1\u5BF8  170","price":921,"num":6,"alertNum":1,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/2186\/34\/688\/145171\/5b9246e5Ee83b63cd\/bd6f4345da3ddc9f.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t29521\/271\/1222017042\/96947\/4ad81a88\/5cda6c43N1fc45474.jpg","weight":1590,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":5,"commentNum":429,"status":"1"},{"id":1148477873766539264,"sn":"7f1bf62e102a4beeb0258a99834e8faa","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  60\u82F1\u5BF8  170","price":774,"num":4,"alertNum":6,"image":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6350\/31\/9335\/346484\/5c136a1dE32b7b86b\/cfaa654ebfa098db.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t20515\/322\/244144345\/155580\/43d75b84\/5b061d39N63a954dd.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t10480\/167\/2719213601\/153778\/5243bb25\/5cd54bbeN68b1054d.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg","weight":4312,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":36,"commentNum":5577,"status":"1"},{"id":1148477873774927872,"sn":"c7022a053a484bcf91814d62dfc84e6d","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  60\u82F1\u5BF8  170","price":294,"num":0,"alertNum":0,"image":"http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/64811\/3\/1181\/238169\/5cf76eedE4cede79a\/9610f77876500f92.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/32455\/5\/10367\/292156\/5caf06c8E9f781ac7\/631a24c1ac6dddee.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t27247\/67\/2175778313\/348661\/d5306dd8\/5bf86dcaN20a58cd6.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t22510\/335\/514305275\/364033\/1740b59b\/5b325034N8477d7ac.jpg","weight":201,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"170\"}","saleNum":33,"commentNum":8121,"status":"1"},{"id":1148477873787510784,"sn":"fd6f02f2f5d746dc8dad299917ecb7d5","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  20\u82F1\u5BF8  175","price":851,"num":0,"alertNum":6,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/31203\/23\/9994\/197564\/5cab210dE64e20358\/d94e70571c1fd455.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t22510\/335\/514305275\/364033\/1740b59b\/5b325034N8477d7ac.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t22510\/335\/514305275\/364033\/1740b59b\/5b325034N8477d7ac.jpg","weight":153,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":47,"commentNum":9104,"status":"1"},{"id":1148477873795899392,"sn":"c47a7718e5f840af82645a99b1495f5c","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  20\u82F1\u5BF8  175","price":363,"num":7,"alertNum":4,"image":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/71721\/34\/3065\/124817\/5d147ac3E049e04af\/957ae2bddb710acd.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/60088\/4\/2365\/102281\/5d0b540cE8fd2abd2\/1b05adaffc1e966c.jpg","weight":9513,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":56,"commentNum":6980,"status":"1"},{"id":1148477873808482304,"sn":"1c57b41e1c2941e9bde3e9aab7779eda","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  20\u82F1\u5BF8  175","price":944,"num":7,"alertNum":5,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/4522\/8\/12858\/225377\/5bd52796E0ead8fc5\/9a3c6379a353aafe.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/66064\/32\/3063\/175413\/5d1472e1E88469144\/8b4a92696353c6ef.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/59933\/40\/2424\/146562\/5d0b4cabE236be0d8\/ce0d13b99a0b86aa.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t27247\/67\/2175778313\/348661\/d5306dd8\/5bf86dcaN20a58cd6.jpg","weight":5600,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"20\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":10,"commentNum":9438,"status":"1"},{"id":1148477873816870912,"sn":"fd6a2c95a949460e8d9b953c33ced978","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  50\u82F1\u5BF8  175","price":478,"num":9,"alertNum":7,"image":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t26053\/226\/1746531202\/221888\/c26bda62\/5bbc08c0N2a24122f.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/66272\/26\/3615\/276256\/5d1d6156Efc7119af\/bee424949d1c1f9f.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/71721\/34\/3065\/124817\/5d147ac3E049e04af\/957ae2bddb710acd.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/42968\/36\/6334\/124909\/5cff4240Ebf980183\/d7cc572e2e8ee29b.jpg","weight":5675,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":53,"commentNum":2155,"status":"1"},{"id":1148477873829453824,"sn":"15d374b13c6d491c9ea9f590e26d5786","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  50\u82F1\u5BF8  175","price":741,"num":1,"alertNum":1,"image":"http:\/\/img10.360buyimg.com\/n7\/jfs\/t1\/44237\/19\/7294\/57280\/5d0c8456E294049e1\/27a45daf4b869fb2.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg,http:\/\/img13.360buyimg.com\/n8\/jfs\/t1\/23382\/26\/12621\/140101\/5c98c074E9b4b39fb\/d0270b6dcf930379.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/32455\/5\/10367\/292156\/5caf06c8E9f781ac7\/631a24c1ac6dddee.jpg","weight":145,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":9,"commentNum":6164,"status":"1"},{"id":1148477873842036736,"sn":"a4dd5addfcce449d85d76b5cb42f4713","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  50\u82F1\u5BF8  175","price":138,"num":5,"alertNum":8,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/36939\/39\/9983\/467265\/5cd245ecEd26d6a79\/b63a553e1a824a7c.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img13.360buyimg.com\/n7\/jfs\/t1\/39124\/14\/10388\/134846\/5d1b2496E9e9b5b7c\/374d96244d788873.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6350\/31\/9335\/346484\/5c136a1dE32b7b86b\/cfaa654ebfa098db.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/60088\/4\/2365\/102281\/5d0b540cE8fd2abd2\/1b05adaffc1e966c.jpg","weight":5820,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"50\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":1,"commentNum":7220,"status":"1"},{"id":1148477873850425344,"sn":"630388a7a2e040b8b0d75eacc76c1df9","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u7ACB\u4F53\u58F0  60\u82F1\u5BF8  175","price":795,"num":0,"alertNum":9,"image":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6413\/35\/485\/159824\/5bc9349eE2ddb3c30\/6dddf7ef5a4de686.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6350\/31\/9335\/346484\/5c136a1dE32b7b86b\/cfaa654ebfa098db.jpg,http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/64811\/3\/1181\/238169\/5cf76eedE4cede79a\/9610f77876500f92.jpg,http:\/\/img10.360buyimg.com\/n8\/jfs\/t1\/47853\/15\/1727\/263014\/5cf88b19E32807dee\/fb6c49149c5878c0.jpg","weight":4976,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u7ACB\u4F53\u58F0\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":69,"commentNum":1969,"status":"1"},{"id":1148477873858813952,"sn":"94e652fe24ab493b83d42c4610fb5a76","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u73AF\u7ED5  60\u82F1\u5BF8  175","price":756,"num":50,"alertNum":5,"image":"http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/44213\/35\/7547\/226060\/5d11713fE4444a8ca\/202f49987ad41a5e.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img14.360buyimg.com\/n7\/jfs\/t1\/75428\/4\/2831\/201268\/5d11cae4E52e6be64\/2558ad6adbcc8d07.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6413\/35\/485\/159824\/5bc9349eE2ddb3c30\/6dddf7ef5a4de686.jpg,http:\/\/img11.360buyimg.com\/n8\/jfs\/t1\/49987\/17\/1591\/501668\/5cf51d80Eefce08ad\/04d35685730f250d.jpg","weight":6841,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u73AF\u7ED5\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":1741,"commentNum":5777,"status":"1"},{"id":1148477873867202560,"sn":"6a8aa7cae2c84f19854376417e539714","name":"\u6D77\u5C14 \u6D89\u9F9F\u5E7B  \u5C0F\u5F71\u9662  60\u82F1\u5BF8  175","price":58,"num":9,"alertNum":9,"image":"http:\/\/img12.360buyimg.com\/n7\/jfs\/t1\/15377\/32\/3914\/166365\/5c2cd4daEf226137b\/d0a8008802ea0b5d.jpg","images":"http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/21612\/38\/4767\/334593\/5c3582e4E8fd541ce\/a17353d206e19e68.jpg,http:\/\/img13.360buyimg.com\/n8\/jfs\/t1\/23382\/26\/12621\/140101\/5c98c074E9b4b39fb\/d0270b6dcf930379.jpg,http:\/\/img11.360buyimg.com\/n7\/jfs\/t1\/6350\/31\/9335\/346484\/5c136a1dE32b7b86b\/cfaa654ebfa098db.jpg,http:\/\/img10.360buyimg.com\/n7\/jfs\/t27247\/67\/2175778313\/348661\/d5306dd8\/5bf86dcaN20a58cd6.jpg","weight":352,"createTime":"2019-07-09T14:23:57.000+08:00","updateTime":"2019-07-09T14:23:57.000+08:00","spuId":1148477873514881024,"categoryId":76,"categoryName":"\u5E73\u677F\u7535\u89C6","brandName":"\u6D77\u5C14","spec":"{\"\u7535\u89C6\u97F3\u54CD\u6548\u679C\":\"\u5C0F\u5F71\u9662\",\"\u7535\u89C6\u5C4F\u5E55\u5C3A\u5BF8\":\"60\u82F1\u5BF8\",\"\u5C3A\u7801\":\"175\"}","saleNum":74,"commentNum":797,"status":"1"}],
+                sku:{},
+                spec:{}
+            },
+            methods:{
+                sel:function(name,value){
+                    if(this.spec == undefined){
+                        return false;
+                    }
+                    if(this.spec[name]==value){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                },
+                selectSpecification:function(specName,specValue) {
+                    this.$set(this.spec,specName,specValue);
+                    for(var i=0;i<this.skuList.length;i++ ){
+                        if(this.isQ(JSON.parse(this.skuList[i].spec),this.spec)){
+                            this.sku =this.skuList[i];
+                            break ;
+                        }
+                    }
+                },
+                isQ:function (map1,map2){
+                    //判断两个对象属性个数是否相等
+                    if(  Object.keys(map1).length!=Object.keys(map2).length){
+                        return false;
+                    }
+                    for(var k in map1){
+                        if(map1[k]!=map2[k]){
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+            },
+            created:function () {
+                this.sku=JSON.parse(JSON.stringify(this.skuList[0]));
+                this.spec=JSON.parse(this.skuList[0].spec);
+            }
+
+        })
+    </script>
+</body>
+
+</html>

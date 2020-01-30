@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--声明thyemleaf的标签-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--表示获取到key为hello中数据-->
+<h1 th:text="${hello}"> </h1>
+
+我要输出数据:
+<h2 th:text="${hello}"> </h2>
+<h3 th:text="${hello}"> </h3>
+
+
+<form th:action="@{/search(key=${hello},key2=${hello},key3=${hello})}">
+    <input type="submit">
+</form>
+
+
+<br>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+        <td>index</td>
+        <td>count</td>
+    </tr>
+
+    <!--
+       th:each="user,userStat:${mylist}"
+
+       ${mylist} 要循环的变量
+       user 就是循环出来的每一个元素对应的变量名
+       userStat 每一项对应的状态变量
+        -->
+    <tr th:each="user,userStat:${mylist}">
+        <td th:text="${user.id}">123131231313113213132131</td>
+        <td th:text="${user.name}">zhangsan </td>
+        <td th:text="${user.age}">age</td>
+        <td th:text="${userStat.index}"></td>
+        <td th:text="${userStat.count}"></td>
+        <td th:text="${userStat.size}"></td>
+    </tr>
+
+
+
+</table>
+
+
+<div th:each="map,mapStat:${dataMap}">
+    map的值是<span th:text="${map}"></span>
+    key:<div th:text="${mapStat.current.key}"></div>
+    value:<div th:text="${mapStat.current.value}"></div>
+
+    ==================
+</div>
+
+
+<div th:each="name:${names}">
+    name为:<span th:text="${name}"></span>
+</div>
+
+<br>
+日期为:<span th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></span>
+
+
+<div th:if="${age<18}" >
+    显示 18
+</div>
+
+
+
+<button onclick="abc()">请点击我</button>
+
+
+
+<!--串的拼接-->
+<a th:class="|${class1} ${class2}|">kjljljljl</a>
+
+
+
+
+
+
+
+
+</body>
+<!--内联-->
+<script th:inline="javascript">
+
+    var myvalue =[[  ${age}  ]];
+    function  abc() {
+        alert(myvalue);
+    }
+</script>
+</html>

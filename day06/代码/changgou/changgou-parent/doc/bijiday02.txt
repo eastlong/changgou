@@ -1,0 +1,109 @@
+1.FastDFS是什么
+
+2.fastdfs的架构
+
+3.fastdfs 上传图片 下载图片
+
+4.安装fastdfs
+
+5. 文件的操作
+	+ 上传 (..........)
+	+ 下载
+	+ 删除
+	+ 获取信息...
+
+6.(实战...)   CRUD
+	+ 相册管理
+	+ 规格的管理
+	+ 参数的管理
+	+ 模板的管理
+	+ 分类的管理
+
+	+ 表结构的关系.
+
+
+
++ 实现fastdfs 上传图片的功能
+
+	+ 用户/前端/用户微服务用户 想文件微服务发送请求 
+	+ 文件微服务接收到文件(流)
+	+ 调用fastdfs的API 实现文件上传
+	+ 返回给用户一个图片的路径.
+
+
+
++ 安装 fastdfs
+	+ tracker
+	+ storage
+	+ nginx
+	+ nginx_fastdfs_module
+
++ 搭建文件微服务(fileapplication)
+	+ 依赖
+	+ yml
+	+ 引导类(启动类)
+
+
+
+
++ 测试
+	+ 文件操作
+		+ 上传
+		+ 下载
+		+ ...
+
+
+
++ 上传图片
+	+ 1.
+
+
+
+
+docker run -d --name storage --net=host -e TRACKER_IP=192.168.211.132:22122 -e GROUP_NAME=group1 morunchang/fastdfs sh storage.sh
+
+
+
+sh storage.sh  :内部封装了启动stroage 启动nginx  启动fastdfs_nginx_module
+
+
++ 封装一个工具类
+	+提供 各种文件的操作(上传 ,下载,上传...)
+	+创建POJO (封装文件信息)
+
++ 实现图片上传
+	+ 配置 多媒体解析器 ()
+
+	+ 需要有file-upload.jar
+
+	+ 编写一个controller 
+
+
+	+ 页面有一个form
+
+
+
+
+
++ 总结
+       + fastdfs : 分布式的文件系统 ()
+       + 架构
+	+ tracker
+	+ storage
+	+ client
+	+ nginx
+	+ nginx_module
+
+
+     + 图片的上传
+
+
+	
+     + 实战 ()
+
+	crud
+
+
+
+
+

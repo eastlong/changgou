@@ -1,0 +1,27 @@
+server:
+  port: 18002
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+spring:
+  application:
+    name: fescar-account
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/fescar_account?useSSL=false&serverTimezone=UTC
+    username: root
+    password: itcast
+  main:
+    allow-bean-definition-overriding: true
+ # 配置seata的service-group组名
+#  cloud:
+#    alibaba:
+#      seata:
+#        tx-service-group: my_test_tx_group
+
+
+
+

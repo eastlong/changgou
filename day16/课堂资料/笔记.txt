@@ -1,0 +1,106 @@
++ 集群 分布式 区别
+
++ eureka    (搭建集群)
+
++ zookeeper (集群.)
+
++ redis的集群(会----)
+
+	+ redis的持久化
+	+ redis的集群(架构) 算法(hash槽 + hash算法)
+	+ redis的高可用
+	+ redis的哨兵模式
+	+ redis的缓存的击穿的问题的解决
+	+ redis的雪崩如何解决问题
+	+ redis的集群的算法(一致性hash)
+
++ rabbitmq的集群
+
+
+
++ 集群:
+	一件事情 ,大家一起做
+
++ 分布式:
+	一件事件,拆开来做.
+
+
++ redis 
+	no sql 数据存储到内存.	    ./redis-server.sh ./redis-cli shutdown
+	
+	redis的持久化
+		+ RDB (默认的开启的)     开启的策略:
+					  900   300  60  正常的关闭服务器,会自动的保存RDB文件.
+
+		+ AOF (默认不开启)  append only file  .将redis操作的命令保存到日志文件中(appendonly.aof)
+
+
+		+ AOF 和RDB 都开启了,用AOF的策略来恢复数据..(数据完整性好)
+
+
+
+
+
++ redis的安装
+	+ linux tar.gz
+	+ 解压
+	+ make
+	+ make install PREFIX=/user/local/redis
+	+ 启动
+
+
++ 保证高可用
+
+	+ 主从模式 (采用主从复制的策略实现数据的同步)
+
+	+ redisCluster
+
+	+ redis sentinel
+		+ 每一个哨兵就是一个独立进程
+		+ 目的就是监听master 的状态,自动的进行故障转移(failover) ,通知客户端master的IP地址和端口
+		+ 为了保证高可用,sentinel 也需要做集群.(投票选举机制)
+		+ 哨兵监控和自动切换的过程
+			+ 1.master 被哨兵紧监控
+			+ 2.如果master宕机,哨兵内部需要进行投票选举 选举出其他的slave中 成为了master
+			+ 3.其他的节点 自动变成该新的master的slave ,原master恢复也变成slave
+			+ 4.一旦master 宕机,选举出新的master 通知客户端新的master
+			
+
+
+
++ rediscluster搭建
+	+ 创建6个实例
+
+	+ 端口 7001- 7006
+
+	+ ruby脚本语言环境()
+
+	+ copy  6份 单机版 (删除掉原来的rdb文件和aof)
+
+	+ 每一个redis实例的配置文件中要开启集群模式
+
+	+ 使用rb脚本来分配hash slot 
+
+
+
+
++ Redis哨兵模式
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

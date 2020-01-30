@@ -1,0 +1,325 @@
+#查看所有的索引 数据
+
+GET _cat/indices?v
+
+
+# 删除索引
+DELETE /user
+
+# 创建索引
+PUT /user
+
+
+# 创建类型并做一个映射
+
+PUT /user/userinfo/_mapping
+{
+  "properties": {
+    "name":{
+      "index": true,
+      "store": false,
+      "analyzer": "ik_smart",
+      "search_analyzer": "ik_smart",
+      "type": "text"
+    },
+    "city":{
+      "type": "text",
+      "analyzer": "ik_smart",
+      "search_analyzer": "ik_smart",
+      "store": false
+    },
+    "age":{
+      "type": "long",
+      "store": false
+    },
+    "description":{
+      "type": "text",
+      "analyzer": "ik_smart",
+      "search_analyzer": "ik_smart",
+      "store": false
+    }
+  }
+}
+
+# 创建文档
+PUT /user/userinfo/1
+{
+  "name":"张三",
+  "city":"深圳",
+  "age":18,
+  "description":"很帅很漂亮"
+  
+}
+
+#查询文档
+GET /user/userinfo/1
+
+
+#更新文档  全部替换
+PUT /user/userinfo/1
+{
+  "name":"张三疯"
+
+}
+#更新文档  更新修改的部分 推荐使用的
+POST /user/userinfo/1/_update
+{
+  "doc":{
+    "name":"李四"
+  }
+
+}
+
+
+PUT /user/userinfo/2
+{
+  "name":"王五",
+  "age":35,
+  "city":"深圳",
+  "description":"王五家住在深圳！"
+}
+
+#新增文档数据 id=3
+PUT /user/userinfo/3
+{
+  "name":"张三",
+  "age":19,
+  "city":"深圳",
+  "description":"在深圳打工，来自湖北武汉"
+}
+
+#新增文档数据 id=4
+PUT /user/userinfo/4
+{
+  "name":"张三丰",
+  "age":66,
+  "city":"武汉",
+  "description":"在武汉读书，家在武汉！"
+}
+
+#新增文档数据 id=5
+PUT /user/userinfo/5
+{
+  "name":"赵子龙",
+  "age":77,
+  "city":"广州",
+  "description":"赵子龙来自深圳宝安，但是在广州工作！",
+  "address":"广东省茂名市"
+}
+
+#新增文档数据 id=6
+PUT /user/userinfo/6
+{
+  "name":"赵毅",
+  "age":55,
+  "city":"广州",
+  "description":"赵毅来自广州白云区，从事电子商务8年！"
+}
+
+#新增文档数据 id=7
+PUT /user/userinfo/7
+{
+  "name":"赵哈哈",
+  "age":57,
+  "city":"武汉",
+  "description":"武汉赵哈哈，在深圳打工已有半年了，月薪7500！"
+}
+
+
+GET /user/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+# 删除文档
+DELETE /user/userinfo/1
+
+
+# 查询  ------- term词条查询 不分词
+
+GET /user/_search
+{
+  "query": {
+    "term": {
+      "city": {
+        "value": "深圳"
+      }
+    }
+  }
+}
+
+# 查询  ------- terms 词条s 查询 不分词
+
+GET /user/_search
+{
+  "query": {
+    "terms": {
+      "city": [
+        "深圳",
+        "武汉"
+      ]
+    }
+  }
+}
+
+# 排序
+
+GET /user/_search
+{
+  "query": {
+    "match_all": {}
+  }, 
+  "sort": [
+    {
+      "age": {
+        "order": "asc"
+      }
+    }
+  ]
+}
+
+# 分页 
+#  "from": 0, 表示分页开始的位置: (page-1)*rows
+# "size": 20 表示每页显示的行
+
+GET /user/_search
+{
+  "query": {
+    "match_all": {}
+  }, 
+  "sort": [
+    {
+      "age": {
+        "order": "asc"
+      }
+    }
+  ],
+  "from": 0,
+  "size": 20
+}
+# 范围查询  
+# "gte": 10,  表示 >= 10   gt    >10 
+# "lte": 20,    <=20    lt  <20
+
+GET /user/_search
+{
+  "query": {
+    "range": {
+      "age": {
+        "gte": 18,
+        "lte": 20
+      }
+    }
+  }
+}
+
+# 查询 存在 字段为address的数据
+
+GET /user/_search
+{
+  "query": {
+    "exists":{
+      "field":"address"
+    }
+  }
+}
+
+# bool查询 (多个条件组合查询)
+# 查询 年龄在18 -50 的之间   并且
+# must (AND ) must_not (NOT) shoud (OR )
+# 查询 城市在 深圳
+
+GET /user/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "age": {
+              "gte": 0,
+              "lte": 20
+            }
+          }
+        },{
+          "term": {
+            "city": {
+              "value": "深圳"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+# match 查询 (匹配查询) 先分词 再查询
+
+GET  user/_search
+{
+  "query": {
+    "match": {
+      "description": "深圳打工"
+    }
+  }
+}
+
+# 前缀 prefix   
+GET  user/_search 
+{
+  "query": {
+    "prefix": {
+      "name": {
+        "value": "王"
+      }
+    }
+  }
+}
+
+# 多字段搜索
+GET _search
+{
+  "query": {
+    "multi_match": {
+      "query": "深圳",
+      "fields": [
+        "city",
+        "description"
+      ]
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
